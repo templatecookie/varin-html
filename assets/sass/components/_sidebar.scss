@@ -1,0 +1,72 @@
+.sidebar{
+    background-color: #F7F7F7;
+    overflow: hidden;
+    padding: 16px;
+    &-profile{
+        margin: 16px;
+        &__image{
+            width: 191px;
+            height: 191px;
+            border-radius: 50%;
+            margin: 0 auto 16px;
+            img{
+                width: 100%;
+            }
+        }
+        &__name, &__designation{
+            text-align: center;
+        }
+        &__designation{
+            margin-bottom: 16px;
+        }
+        &__social-media{
+            ul{
+                text-align: center;
+                li{
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    margin: 0 12px;
+                    a{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-menu{
+        margin-bottom: 80px;
+        ul{
+            li{
+                padding: 6px 0px;
+                a{
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    line-height: 32px;
+                    letter-spacing: -0.001em;
+                    color: #707070;
+                    img{
+                        margin: 0px 20px;
+                    }
+                }
+            }
+        }
+    }
+    &-contact{
+        p{
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: -0.001em;
+            color: #707070;
+            img{
+                margin: 0px 20px;
+            }
+        }
+    }
+}
