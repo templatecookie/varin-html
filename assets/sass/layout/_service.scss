@@ -1,0 +1,44 @@
+.service-history {
+  color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    width: 149px;
+    height: 149px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fce7be;
+    border-radius: 25px;
+    margin-bottom: 18px;
+  }
+  p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &--complete {
+    h2 {
+      background: #fce7be;
+    }
+  }
+  &--years {
+    h2 {
+      background: #daf3ff;
+    }
+  }
+  &--clients {
+    h2 {
+      background: #ffcdcd;
+    }
+  }
+  &--award {
+    h2 {
+      background: #8bdb81;
+    }
+  }
+}

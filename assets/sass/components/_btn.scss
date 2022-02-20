@@ -7,4 +7,9 @@
   border-radius: 5px;
   width: 160px;
   padding: 10px 35px;
+  transition: 0.3s all ease-in;
+  &:hover {
+    background-color: transparent;
+    color: #0063f7;
+  }
 }
