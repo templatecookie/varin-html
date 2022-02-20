@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,17 @@
 
 body {
   background-color: #e5e5e5;
+  font-family: "Public Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 ul{
   list-style: none;
