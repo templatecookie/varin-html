@@ -424,6 +424,14 @@ main {
   padding: 6px 0px;
 }
 
+.sidebar-menu ul li:hover, .sidebar-menu ul li:active {
+  background-color: #EDEDED;
+}
+
+.sidebar-menu ul li:hover a img, .sidebar-menu ul li:active a img {
+  fill: #2D7CF5;
+}
+
 .sidebar-menu ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,6 +442,9 @@ main {
   font-size: 20px;
   line-height: 32px;
   letter-spacing: -0.001em;
+}
+
+.sidebar-menu ul li a span {
   color: #707070;
 }
 
