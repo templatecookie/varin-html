@@ -780,116 +780,8 @@ main {
   color: #0063F7;
 }
 
-.sidebar {
-  background-color: #F7F7F7;
-  overflow: hidden;
-  padding: 16px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-}
-
-.sidebar-profile {
-  margin: 16px;
-}
-
-.sidebar-profile__image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 0 auto 16px;
-}
-
-.sidebar-profile__image img {
-  width: 100%;
-}
-
-.sidebar-profile__name, .sidebar-profile__designation {
-  text-align: center;
-}
-
-.sidebar-profile__name {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  color: #161616;
-}
-
-.sidebar-profile__designation {
-  margin-bottom: 14px;
-}
-
-.sidebar-profile__social-media ul {
-  text-align: center;
-}
-
-.sidebar-profile__social-media ul li {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  margin: 0 8px;
-}
-
-.sidebar-profile__social-media ul li a img {
-  width: 100%;
-}
-
-.sidebar-menu {
-  margin-bottom: 64px;
-}
-
-.sidebar-menu ul li {
-  padding: 6px 0px;
-}
-
-.sidebar-menu ul li:hover, .sidebar-menu ul li:active {
-  background-color: #EDEDED;
-}
-
-.sidebar-menu ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: -0.001em;
-}
-
-.sidebar-menu ul li a span {
-  color: #707070;
-}
-
-.sidebar-menu ul li a img {
-  width: 16px;
-  height: 16px;
-  margin: 0px 12px;
-}
-
-.sidebar-contact p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.001em;
-  color: #707070;
-}
-
-.sidebar-contact p img {
-  width: 16px;
-  height: 16px;
-  margin: 0px 12px;
-}
-
 .main-bar {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding: 40px;
 }
 
@@ -907,7 +799,7 @@ main {
   border: none;
   font-size: 14px;
   line-height: 20px;
-  color: #0063F7;
+  color: #0063f7;
   cursor: pointer;
   display: block;
   margin: 0px auto 64px;
@@ -1112,116 +1004,8 @@ main {
   color: #0063F7;
 }
 
-.sidebar {
-  background-color: #F7F7F7;
-  overflow: hidden;
-  padding: 16px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-}
-
-.sidebar-profile {
-  margin: 16px;
-}
-
-.sidebar-profile__image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 0 auto 16px;
-}
-
-.sidebar-profile__image img {
-  width: 100%;
-}
-
-.sidebar-profile__name, .sidebar-profile__designation {
-  text-align: center;
-}
-
-.sidebar-profile__name {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  color: #161616;
-}
-
-.sidebar-profile__designation {
-  margin-bottom: 14px;
-}
-
-.sidebar-profile__social-media ul {
-  text-align: center;
-}
-
-.sidebar-profile__social-media ul li {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  margin: 0 8px;
-}
-
-.sidebar-profile__social-media ul li a img {
-  width: 100%;
-}
-
-.sidebar-menu {
-  margin-bottom: 64px;
-}
-
-.sidebar-menu ul li {
-  padding: 6px 0px;
-}
-
-.sidebar-menu ul li:hover, .sidebar-menu ul li:active {
-  background-color: #EDEDED;
-}
-
-.sidebar-menu ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: -0.001em;
-}
-
-.sidebar-menu ul li a span {
-  color: #707070;
-}
-
-.sidebar-menu ul li a img {
-  width: 16px;
-  height: 16px;
-  margin: 0px 12px;
-}
-
-.sidebar-contact p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.001em;
-  color: #707070;
-}
-
-.sidebar-contact p img {
-  width: 16px;
-  height: 16px;
-  margin: 0px 12px;
-}
-
 .main-bar {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding: 40px;
 }
 
@@ -1239,7 +1023,7 @@ main {
   border: none;
   font-size: 14px;
   line-height: 20px;
-  color: #0063F7;
+  color: #0063f7;
   cursor: pointer;
   display: block;
   margin: 0px auto 64px;
