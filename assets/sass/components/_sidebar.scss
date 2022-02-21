@@ -10,6 +10,9 @@
     bottom: 0;
     &-profile{
         margin: 16px;
+        @include max(991px){
+            margin: 2px;
+        }
         &__image{
             width: 150px;
             height: 150px;
