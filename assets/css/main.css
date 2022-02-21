@@ -9,6 +9,7 @@
 body {
   background-color: #e5e5e5;
   font-family: "Public Sans", sans-serif;
+  position: relative;
 }
 
 a {
@@ -56,6 +57,9 @@ main {
   background-color: #F7F7F7;
   overflow: hidden;
   padding: 16px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
 }
 
 .sidebar-profile {
@@ -116,10 +120,6 @@ main {
   background-color: #EDEDED;
 }
 
-.sidebar-menu ul li:hover a img, .sidebar-menu ul li:active a img {
-  fill: #2D7CF5;
-}
-
 .sidebar-menu ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,7 +137,9 @@ main {
 }
 
 .sidebar-menu ul li a img {
-  margin: 0px 20px;
+  width: 16px;
+  height: 16px;
+  margin: 0px 12px;
 }
 
 .sidebar-contact p {
@@ -154,7 +156,9 @@ main {
 }
 
 .sidebar-contact p img {
-  margin: 0px 20px;
+  width: 16px;
+  height: 16px;
+  margin: 0px 12px;
 }
 
 .btn_primary {
@@ -636,6 +640,9 @@ main {
   background-color: #F7F7F7;
   overflow: hidden;
   padding: 16px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
 }
 
 .sidebar-profile {
@@ -696,10 +703,6 @@ main {
   background-color: #EDEDED;
 }
 
-.sidebar-menu ul li:hover a img, .sidebar-menu ul li:active a img {
-  fill: #2D7CF5;
-}
-
 .sidebar-menu ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -717,7 +720,9 @@ main {
 }
 
 .sidebar-menu ul li a img {
-  margin: 0px 20px;
+  width: 16px;
+  height: 16px;
+  margin: 0px 12px;
 }
 
 .sidebar-contact p {
@@ -734,7 +739,9 @@ main {
 }
 
 .sidebar-contact p img {
-  margin: 0px 20px;
+  width: 16px;
+  height: 16px;
+  margin: 0px 12px;
 }
 
 .col-lg-9 {
@@ -965,6 +972,9 @@ main {
   background-color: #F7F7F7;
   overflow: hidden;
   padding: 16px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
 }
 
 .sidebar-profile {
@@ -1025,10 +1035,6 @@ main {
   background-color: #EDEDED;
 }
 
-.sidebar-menu ul li:hover a img, .sidebar-menu ul li:active a img {
-  fill: #2D7CF5;
-}
-
 .sidebar-menu ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1046,7 +1052,9 @@ main {
 }
 
 .sidebar-menu ul li a img {
-  margin: 0px 20px;
+  width: 16px;
+  height: 16px;
+  margin: 0px 12px;
 }
 
 .sidebar-contact p {
@@ -1063,7 +1071,9 @@ main {
 }
 
 .sidebar-contact p img {
-  margin: 0px 20px;
+  width: 16px;
+  height: 16px;
+  margin: 0px 12px;
 }
 
 .col-lg-9 {

@@ -2,6 +2,9 @@
     background-color: #F7F7F7;
     overflow: hidden;
     padding: 16px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     &-profile{
         margin: 16px;
         &__image{
@@ -51,11 +54,6 @@
                 padding: 6px 0px;
                 &:hover, &:active{
                         background-color: #EDEDED;
-                        a{
-                            img{
-                                fill: #2D7CF5;
-                            }
-                        }
                     }
                 a{
                     display: flex;
@@ -67,7 +65,9 @@
                         color: #707070;
                     }
                     img{
-                        margin: 0px 20px;
+                        width: 16px;
+                        height: 16px;
+                        margin: 0px 12px;
                     }
                 }
             }
@@ -82,7 +82,9 @@
             letter-spacing: -0.001em;
             color: #707070;
             img{
-                margin: 0px 20px;
+                width: 16px;
+                height: 16px;
+                margin: 0px 12px;
             }
         }
     }
