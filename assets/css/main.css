@@ -51,7 +51,7 @@ main {
   line-height: 40px;
   letter-spacing: -0.02em;
   color: #161616;
-  margin-bottom: 48px;
+  margin-bottom: 35px;
 }
 
 .mySlide {
@@ -63,12 +63,18 @@ main {
 }
 
 .sidebar {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   overflow: hidden;
   padding: 16px;
   position: fixed;
   top: 0;
   bottom: 0;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 .sidebar-profile {
@@ -126,7 +132,7 @@ main {
 }
 
 .sidebar-menu ul li:hover, .sidebar-menu ul li:active {
-  background-color: #EDEDED;
+  background-color: #ededed;
 }
 
 .sidebar-menu ul li a {
@@ -261,12 +267,23 @@ main {
   color: #0063F7;
 }
 
+.hero-content {
+  width: 100%;
+}
+
 .hero-content h1 {
   font-weight: 700;
   font-size: 76px;
   line-height: 88px;
   letter-spacing: -0.02em;
   color: #161616;
+}
+
+@media (max-width: 991px) {
+  .hero-content h1 {
+    font-size: 60px;
+    line-height: 75px;
+  }
 }
 
 .hero-content h1 span {
@@ -296,8 +313,14 @@ main {
   color: #f7f7f7;
 }
 
+@media (max-width: 991px) {
+  .hero-content__btn a:last-child {
+    margin-top: 15px;
+  }
+}
+
 .hero-img {
-  width: 370px;
+  width: 100%;
   height: 500px;
 }
 
@@ -306,8 +329,14 @@ main {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .about {
+    margin-top: 50px;
+  }
+}
+
 .about-img {
-  width: 380px;
+  width: 100%;
   height: 449px;
 }
 
@@ -376,6 +405,21 @@ main {
 
 .service-history--award h2 {
   background: #8bdb81;
+}
+
+@media (max-width: 767px) {
+  .service-history {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-history-card {
+    margin-bottom: 20px;
+  }
 }
 
 .service-card {
@@ -495,6 +539,21 @@ main {
   background: #8bdb81;
 }
 
+@media (max-width: 767px) {
+  .service-history {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-history-card {
+    margin-bottom: 20px;
+  }
+}
+
 .card {
   border: 1px solid #e2e2e2;
   -webkit-box-sizing: border-box;
@@ -568,6 +627,12 @@ main {
 
 .card-list ul li span.inactive {
   background-color: #c6c6c6;
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin-bottom: 15px;
+  }
 }
 
 .testimonial .qoute-img {
@@ -1139,6 +1204,10 @@ main {
   color: #161616;
 }
 
+.contact {
+  background-color: #f7f7f7;
+}
+
 .contact-title {
   width: 400px;
 }
@@ -1162,6 +1231,12 @@ main {
 .contact-map {
   width: 100%;
   height: 600px;
+}
+
+@media (max-width: 991px) {
+  .contact-map {
+    height: 450px;
+  }
 }
 
 .contact-map img {
@@ -1220,9 +1295,16 @@ main {
 }
 
 .contact-form-btn {
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .contact-form-btn .btn_primary {
   padding: 14px 25px;
+}
+
+@media (max-width: 991px) {
+  .contact-form {
+    margin-top: 50px;
+    width: 80%;
+  }
 }
