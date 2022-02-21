@@ -27,6 +27,7 @@ ul {
 a {
   text-decoration: none;
   display: inline-block;
+  cursor: pointer;
 }
 main {
   background-color: #f7f7f7;
@@ -44,4 +45,10 @@ main {
     margin-bottom: 48px;
   }
   text-transform: capitalize;
+}
+.mySlide{
+  display: none;
+  }
+.mySlideText{
+  display: none;
 }
