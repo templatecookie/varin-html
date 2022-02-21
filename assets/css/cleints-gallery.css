@@ -1,0 +1,7 @@
+.clients-gallery {
+  position: relative;
+}
+
+.clients-gallery .img2, .clients-gallery .img3, .clients-gallery .img4, .clients-gallery .img5, .clients-gallery .img6, .clients-gallery .img7, .clients-gallery .img8, .clients-gallery .img9 {
+  position: absolute;
+}

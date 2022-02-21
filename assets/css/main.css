@@ -647,6 +647,66 @@ main {
   margin-left: 48px;
 }
 
+.clients-gallery {
+  position: relative;
+}
+
+.clients-gallery img {
+  display: inline-block;
+}
+
+.clients-gallery .img2 {
+  position: absolute;
+  width: 60px;
+  left: 20px;
+  top: 0px;
+}
+
+.clients-gallery .img3 {
+  position: absolute;
+  right: 75px;
+  top: 30px;
+  width: 60px;
+}
+
+.clients-gallery .img4 {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+.clients-gallery .img5 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+}
+
+.clients-gallery .img6 {
+  position: absolute;
+  left: 20px;
+  top: 75px;
+}
+
+.clients-gallery .img7 {
+  position: absolute;
+  top: 180px;
+  left: 60%;
+}
+
+.clients-gallery .img8 {
+  position: absolute;
+  right: 0px;
+  top: 80px;
+}
+
+.clients-gallery .img9 {
+  width: 100px;
+  position: absolute;
+  left: 50px;
+  top: 120px;
+}
+
 .blog-card {
   padding: 32px;
   border: 1px solid #E2E2E2;
@@ -1161,12 +1221,12 @@ main {
   margin: 0px 12px;
 }
 
-.col-lg-9 {
+.main-bar {
   background-color: #F7F7F7;
   padding: 40px;
 }
 
-.col-lg-9 #portfolio {
+.main-bar #portfolio {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -1175,7 +1235,7 @@ main {
   margin-bottom: 64px;
 }
 
-.col-lg-9 #load-more-btn {
+.main-bar #load-more-btn {
   outline: none;
   border: none;
   font-size: 14px;
