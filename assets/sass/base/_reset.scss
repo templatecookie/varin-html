@@ -30,6 +30,9 @@ a {
 main {
   background-color: #f7f7f7;
 }
+.page-title {
+  font-weight: bold;
+}
 .section-title {
   h2 {
     font-weight: 700;
@@ -37,6 +40,7 @@ main {
     line-height: 40px;
     letter-spacing: -0.02em;
     color: #161616;
-    text-transform: capitalize;
+    margin-bottom: 48px;
   }
+  text-transform: capitalize;
 }
