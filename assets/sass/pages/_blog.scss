@@ -1,9 +1,4 @@
 .main-bar{
-    background-color: #F7F7F7;
-    padding: 40px;
-    @include max(767px){
-        padding: 20px;
-    }
     #blog{
         display: grid;
         grid-template-columns: 1fr 1fr;
