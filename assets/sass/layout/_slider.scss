@@ -1,0 +1,51 @@
+.testimonial{
+    .qoute-img{
+        width:40px;
+        height: 32px;
+    }
+    &__qoute-text{
+        padding-left: 40px;
+        margin-bottom: 64px;
+    }
+    &__client-info{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        .client{
+            display: flex;
+            &__image{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 28px;
+                img{
+                    width: 100%;
+                }
+            }
+            &__info-name{
+                font-size: 18px;
+                color: #161616;
+            }
+        }
+    }
+    .slider-next-prev-btn{
+        display: flex;
+        margin-top: 10px;
+        .prev, .next{
+            background-color: #161616;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{   
+                font-size: 12px;   
+            }
+        }
+        .next{
+            margin-left: 48px;
+        }
+    }
+}
