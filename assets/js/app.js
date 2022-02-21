@@ -16,13 +16,11 @@ function showSlides(n) {
     var i;
     var slidesImage = document.getElementsByClassName("mySlide");
     var slidesText = document.getElementsByClassName("mySlideText");
-    console.log(slidesImage, slidesText);
     if (n > slidesImage.length) {
         slideImgIndex = 1;
-    }
-    if (n > slidesText.length) {
         slideTextIndex = 1;
     }
+    
     if (n < 1) {
         slideImgIndex = slidesImage.length;
         slideTextIndex = slidesText.length;
@@ -30,7 +28,7 @@ function showSlides(n) {
     for (i = 0; i < slidesImage.length; i++) {
         slidesImage[i].style.display = "none";
     }
-    for (i = 0; i < slidesImage.length; i++) {
+    for (i = 0; i < slidesText.length; i++) {
         slidesText[i].style.display = "none";
     }
     slidesImage[slideImgIndex - 1].style.display = "block";
