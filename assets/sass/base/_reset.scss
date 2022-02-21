@@ -20,18 +20,33 @@ ul {
   padding: 0;
   list-style: none;
 }
-ul{
+ul {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
   display: inline-block;
 }
+<<<<<<< HEAD
 .page-title{
     font-weight: bold;
+=======
+main {
+  background-color: #f7f7f7;
+}
+.section-title {
+  h2 {
+    font-weight: 700;
+>>>>>>> a10450cb2f7bd000e391ba44c1bc369daa9f7dcc
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -0.02em;
     color: #161616;
+<<<<<<< HEAD
     margin-bottom: 48px;
 }
+=======
+    text-transform: capitalize;
+  }
+}
+>>>>>>> a10450cb2f7bd000e391ba44c1bc369daa9f7dcc
