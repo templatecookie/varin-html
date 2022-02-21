@@ -1,11 +1,8 @@
 @import "base/reset";
-@import "layout/hero";
-@import "layout/about";
-@import "layout/service";
-@import "components/service-card";
-@import "layout/service";
-@import "components/pricing-card";
-@import "components/btn";
 
 //components
 @import "components/sidebar";
+@import "components/btn";
+
+//pages
+@import "pages/home";

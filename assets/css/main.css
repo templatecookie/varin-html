@@ -44,6 +44,122 @@ main {
   text-transform: capitalize;
 }
 
+.sidebar {
+  background-color: #F7F7F7;
+  overflow: hidden;
+  padding: 16px;
+}
+
+.sidebar-profile {
+  margin: 16px;
+}
+
+.sidebar-profile__image {
+  width: 191px;
+  height: 191px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+}
+
+.sidebar-profile__image img {
+  width: 100%;
+}
+
+.sidebar-profile__name, .sidebar-profile__designation {
+  text-align: center;
+}
+
+.sidebar-profile__designation {
+  margin-bottom: 16px;
+}
+
+.sidebar-profile__social-media ul {
+  text-align: center;
+}
+
+.sidebar-profile__social-media ul li {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 0 12px;
+}
+
+.sidebar-profile__social-media ul li a img {
+  width: 100%;
+}
+
+.sidebar-menu {
+  margin-bottom: 80px;
+}
+
+.sidebar-menu ul li {
+  padding: 6px 0px;
+}
+
+.sidebar-menu ul li:hover, .sidebar-menu ul li:active {
+  background-color: #EDEDED;
+}
+
+.sidebar-menu ul li:hover a img, .sidebar-menu ul li:active a img {
+  fill: #2D7CF5;
+}
+
+.sidebar-menu ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.001em;
+}
+
+.sidebar-menu ul li a span {
+  color: #707070;
+}
+
+.sidebar-menu ul li a img {
+  margin: 0px 20px;
+}
+
+.sidebar-contact p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.001em;
+  color: #707070;
+}
+
+.sidebar-contact p img {
+  margin: 0px 20px;
+}
+
+.btn_primary {
+  color: #f7f7f7;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  background: #0063f7;
+  border-radius: 5px;
+  width: 160px;
+  padding: 10px 35px;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+.btn_primary:hover {
+  background-color: transparent;
+  color: #0063f7;
+}
+
 .hero-content h1 {
   font-weight: 700;
   font-size: 80px;
@@ -351,120 +467,4 @@ main {
 
 .card-list ul li span.inactive {
   background-color: #c6c6c6;
-}
-
-.btn_primary {
-  color: #f7f7f7;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  background: #0063f7;
-  border-radius: 5px;
-  width: 160px;
-  padding: 10px 35px;
-  -webkit-transition: 0.3s all ease-in;
-  transition: 0.3s all ease-in;
-}
-
-.btn_primary:hover {
-  background-color: transparent;
-  color: #0063f7;
-}
-
-.sidebar {
-  background-color: #F7F7F7;
-  overflow: hidden;
-  padding: 16px;
-}
-
-.sidebar-profile {
-  margin: 16px;
-}
-
-.sidebar-profile__image {
-  width: 191px;
-  height: 191px;
-  border-radius: 50%;
-  margin: 0 auto 16px;
-}
-
-.sidebar-profile__image img {
-  width: 100%;
-}
-
-.sidebar-profile__name, .sidebar-profile__designation {
-  text-align: center;
-}
-
-.sidebar-profile__designation {
-  margin-bottom: 16px;
-}
-
-.sidebar-profile__social-media ul {
-  text-align: center;
-}
-
-.sidebar-profile__social-media ul li {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  margin: 0 12px;
-}
-
-.sidebar-profile__social-media ul li a img {
-  width: 100%;
-}
-
-.sidebar-menu {
-  margin-bottom: 80px;
-}
-
-.sidebar-menu ul li {
-  padding: 6px 0px;
-}
-
-.sidebar-menu ul li:hover, .sidebar-menu ul li:active {
-  background-color: #EDEDED;
-}
-
-.sidebar-menu ul li:hover a img, .sidebar-menu ul li:active a img {
-  fill: #2D7CF5;
-}
-
-.sidebar-menu ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: -0.001em;
-}
-
-.sidebar-menu ul li a span {
-  color: #707070;
-}
-
-.sidebar-menu ul li a img {
-  margin: 0px 20px;
-}
-
-.sidebar-contact p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: -0.001em;
-  color: #707070;
-}
-
-.sidebar-contact p img {
-  margin: 0px 20px;
 }
