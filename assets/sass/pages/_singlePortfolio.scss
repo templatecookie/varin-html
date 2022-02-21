@@ -1,0 +1,91 @@
+.single-portfolio{
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 100px;
+    &__feature-image{
+        margin-bottom: 16px;
+        img{
+            width: 100%;
+        }
+    }
+    &__meta{
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+        margin-bottom: 48px;
+        &-left{
+            h2{
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 30px;
+                letter-spacing: -0.02em;
+                color: #161616;
+                margin-bottom: 48px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: -0.02em;
+                color: #161616;
+                padding-right: 16px;
+            }
+            &>p{
+                margin-bottom: 16px;
+            }
+        }
+        &-right{
+            &-top{
+                display: flex;
+                margin-bottom: 48px;
+                p{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            &-bottom{
+                h2{
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #161616;
+                    margin-bottom: 16px;
+                }
+                P{
+                    color: #707070;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+    }
+    &__role-title{
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        color: #161616;
+        margin-bottom: 64px;
+    }
+    &__role-designation{
+        list-style-type: disc;
+        padding-left: 30px;
+        margin-bottom: 32px;
+       li{
+           &::marker{
+           color: #2f2f2f;
+           font-size: 18px;
+       }
+       }
+    }
+    &__content-details{
+        font-size: 16px;
+        line-height: 24px;  
+        color: #161616;
+    }
+}
+.more-portfolios-title{
+    margin-bottom: 48px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    color: #161616;
+}

@@ -1,0 +1,24 @@
+@import "../components/portfolio-card";
+@import "../components/sidebar";
+
+.col-lg-9{
+    background-color: #F7F7F7;
+    padding: 40px;
+    #portfolio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 45px;
+        margin-bottom: 64px;
+    }
+    #load-more-btn{
+        outline: none;
+        border: none;
+        font-size: 14px;
+        line-height: 20px;
+        color: #0063F7;
+        cursor: pointer;
+        display: block;
+        margin: 0px auto 64px;
+        background-color: transparent;
+    }
+}
