@@ -3,11 +3,17 @@
     border: 1px solid #E2E2E2;
     box-sizing: border-box;
     border-radius: 5px;
+    @include max(375px){
+        padding: 16px;
+    }
     &__feature-image{
         margin-bottom: 16px;
-        img{
-            width: 100%;
-            border-radius: 5px;
+        a{
+            display: block;
+            img{
+                width: 100%;
+                border-radius: 5px;
+            }
         }
     }
     &__meta{
@@ -15,17 +21,17 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #707070;
+        @include max(375px){
+            font-size: 14px;
+        }
         &-left{
-            padding: 8px 16px;
-            font-size: 16px;
-            line-height: 24px;
-            color: #707070;
+            padding: 8px 16px;    
         }
         &-right{
-                font-size: 16px;
-                line-height: 24px;
                 text-align: right;
-                color: #707070;
         }
     }
     &__title{

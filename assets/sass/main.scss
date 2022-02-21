@@ -1,9 +1,11 @@
 @import "base/reset";
+@import "abstracts/mixins";
 
 //components
 @import "components/sidebar";
 @import "components/btn";
 @import "components/blog-card";
+@import "components/portfolio-card";
 
 //pages
 @import "pages/home";
