@@ -5,6 +5,7 @@
     }
     &__qoute-text{
         padding-left: 40px;
+        margin-bottom: 64px;
     }
     &__client-info{
         display: flex;
@@ -22,8 +23,29 @@
                 }
             }
             &__info-name{
+                font-size: 18px;
                 color: #161616;
             }
+        }
+    }
+    .slider-next-prev-btn{
+        display: flex;
+        margin-top: 10px;
+        .prev, .next{
+            background-color: #161616;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{   
+                font-size: 12px;   
+            }
+        }
+        .next{
+            margin-left: 48px;
         }
     }
 }
