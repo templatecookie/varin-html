@@ -574,6 +574,7 @@ main {
 .testimonial .qoute-img {
   width: 40px;
   height: 32px;
+  margin-bottom: 16px;
 }
 
 .testimonial__qoute-text {
