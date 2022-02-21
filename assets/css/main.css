@@ -937,10 +937,17 @@ main {
 .brands .brand-wrap .brand {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-align: center;
 }
 
 .brands .brand-wrap .brand img {
   width: 100%;
+}
+
+@media (max-width: 767px) {
+  .brands .brand-wrap .brand img {
+    width: 50%;
+  }
 }
 
 .main-bar {
