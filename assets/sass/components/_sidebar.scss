@@ -98,22 +98,22 @@
             }
         }
     }
-    &-contact{
+    &-contact {
         @include max(991px){
             display: none;
         }
-        p{
+        p {
             display: flex;
             align-items: center;
             font-size: 14px;
             line-height: 20px;
             letter-spacing: -0.001em;
             color: #707070;
-            img{
-                width: 16px;
-                height: 16px;
-                margin: 0px 12px;
-            }
+        }
+        img {
+            width: 16px;
+            height: 16px;
+            margin: 0px 12px;
         }
     }
 }
