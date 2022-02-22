@@ -29,9 +29,6 @@ a {
   display: inline-block;
   cursor: pointer;
 }
-main {
-  background-color: #f7f7f7;
-}
 img {
   max-width: 100%;
 }
@@ -56,7 +53,7 @@ img {
   display: none;
 }
 .main-bar {
-  background-color: #f7f7f7;
+  background: #f7f7f7;
   padding: 40px;
   @include max(767px) {
     padding: 20px;
@@ -65,3 +62,4 @@ img {
 .section-padding {
   padding: 40px 0;
 }
+

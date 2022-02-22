@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap");
+:root {
+  --bgDark: #000;
+  --bgLight: #f7f7f7;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -67,7 +74,7 @@ img {
 }
 
 .main-bar {
-  background-color: #f7f7f7;
+  background: #f7f7f7;
   padding: 40px;
 }
 
