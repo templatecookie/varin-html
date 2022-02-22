@@ -15,12 +15,12 @@ function displayPosts(posts) {
         div.classList.add("portfolio-card");
         div.innerHTML = `
             <div class="portfolio-card__feature-image">
-                <a href="singleBlog.html"><img src=${post.portfolio_feature_img} /></a>
+                <a href="singlePortfolio.html"><img src=${post.portfolio_feature_img} /></a>
             </div>
             <div class="portfolio-card__meta">
                 <p>${post.portfolio_category}</p>
             </div>
-            <h2 class="portfolio-card__title"><a href="singleBlog.html">${post.portfolio_title}</a></h2>
+            <h2 class="portfolio-card__title"><a href="singlePortfolio.html">${post.portfolio_title}</a></h2>
             <a class="portfolio-card__btn" href="singlePortfolio.html">View Project</a>
         `;
         portfolio.appendChild(div);
@@ -48,12 +48,12 @@ function displayDuePosts(posts) {
         div.classList.add("portfolio-card");
         div.innerHTML = `
             <div class="portfolio-card__feature-image">
-                <a href="singleBlog.html"><img src=${post.portfolio_feature_img} /></a>
+                <a href="singlePortfolio.html"><img src=${post.portfolio_feature_img} /></a>
             </div>
             <div class="portfolio-card__meta">
                 <p>${post.portfolio_category}</p>
             </div>
-            <h2 class="portfolio-card__title"><a href="singleBlog.html">${post.portfolio_title}</a></h2>
+            <h2 class="portfolio-card__title"><a href="singlePortfolio.html">${post.portfolio_title}</a></h2>
             <a class="portfolio-card__btn" href="singlePortfolio.html">View Project</a>
         `;
         portfolio.appendChild(div);
@@ -93,12 +93,12 @@ function displayTabPosts(posts) {
             div.classList.add("portfolio-card");
             div.innerHTML = `
             <div class="portfolio-card__feature-image">
-                <a href="singleBlog.html"><img src=${post.portfolio_feature_img} /></a>
+                <a href="singlePortfolio.html"><img src=${post.portfolio_feature_img} /></a>
             </div>
             <div class="portfolio-card__meta">
                 <p>${post.portfolio_category}</p>
             </div>
-            <h2 class="portfolio-card__title"><a href="singleBlog.html">${post.portfolio_title}</a></h2>
+            <h2 class="portfolio-card__title"><a href="singlePortfolio.html">${post.portfolio_title}</a></h2>
             <a class="portfolio-card__btn" href="singlePortfolio.html">View Project</a>
         `;
 
@@ -117,12 +117,12 @@ function displayTabPosts(posts) {
             div.classList.add("portfolio-card");
             div.innerHTML = `
             <div class="portfolio-card__feature-image">
-                <a href="singleBlog.html"><img src=${post.portfolio_feature_img} /></a>
+                <a href="singlePortfolio.html"><img src=${post.portfolio_feature_img} /></a>
             </div>
             <div class="portfolio-card__meta">
                 <p>${post.portfolio_category}</p>
             </div>
-            <h2 class="portfolio-card__title"><a href="singleBlog.html">${post.portfolio_title}</a></h2>
+            <h2 class="portfolio-card__title"><a href="singlePortfolio.html">${post.portfolio_title}</a></h2>
             <a class="portfolio-card__btn" href="singlePortfolio.html">View Project</a>
         `;
 
@@ -141,12 +141,12 @@ function displayTabPosts(posts) {
             div.classList.add("portfolio-card");
             div.innerHTML = `
             <div class="portfolio-card__feature-image">
-                <a href="singleBlog.html"><img src=${post.portfolio_feature_img} /></a>
+                <a href="singlePortfolio.html"><img src=${post.portfolio_feature_img} /></a>
             </div>
             <div class="portfolio-card__meta">
                 <p>${post.portfolio_category}</p>
             </div>
-            <h2 class="portfolio-card__title"><a href="singleBlog.html">${post.portfolio_title}</a></h2>
+            <h2 class="portfolio-card__title"><a href="singlePortfolio.html">${post.portfolio_title}</a></h2>
             <a class="portfolio-card__btn" href="singlePortfolio.html">View Project</a>
         `;
 
@@ -165,12 +165,12 @@ function displayTabPosts(posts) {
             div.classList.add("portfolio-card");
             div.innerHTML = `
             <div class="portfolio-card__feature-image">
-                <a href="singleBlog.html"><img src=${post.portfolio_feature_img} /></a>
+                <a href="singlePortfolio.html"><img src=${post.portfolio_feature_img} /></a>
             </div>
             <div class="portfolio-card__meta">
                 <p>${post.portfolio_category}</p>
             </div>
-            <h2 class="portfolio-card__title"><a href="singleBlog.html">${post.portfolio_title}</a></h2>
+            <h2 class="portfolio-card__title"><a href="singlePortfolio.html">${post.portfolio_title}</a></h2>
             <a class="portfolio-card__btn" href="singlePortfolio.html">View Project</a>
         `;
             portfolioTabMobileApp.appendChild(div);
