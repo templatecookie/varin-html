@@ -57,10 +57,22 @@
                 </div>
                 <div class="col-lg-9 col-md-11 col-10 main-bar">
                     <!-- Blog Section -->
-                    <h2 class="page-title">Portfolio</h2>
+                    <div class="title-tab-wrapper">
+                        <h2 class="page-title">Portfolio</h2>
+                        <ul class="tab">
+                            <li><a onclick="tab('Images')" >Images</a></li>
+                            <li><a onclick="tab('Web Design')" >Web Design</a></li>
+                            <li><a onclick="tab('Potrait')" >Portraits</a></li>
+                            <li><a onclick="tab('Mobile App')" >Mobile App</a></li>
+                        </ul>
+                    </div>
                     <div id="portfolio">
                         
                     </div>
+                    <div id="portfolioTabImages"></div>
+                    <div id="portfolioTabPotrait"></div>
+                    <div id="portfolioTabWebDesign"></div>
+                    <div id="portfolioTabMobileApp"></div>
                     <button id="load-more-btn">
                         Load More    
                     </button>

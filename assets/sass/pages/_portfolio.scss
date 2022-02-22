@@ -1,11 +1,67 @@
 .main-bar{
+    .title-tab-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        .tab{
+            li{
+                display: inline-block;
+                padding: 0px 12px;
+                a{
+                    color: #707070;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
     #portfolio{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 45px;
         margin-bottom: 64px;
-        @include max(991px){
+        @include max(767px){
             grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+    }
+    #portfolioTabImages{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 45px;
+        margin-bottom: 64px;
+        @include max(767px){
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+    }
+    #portfolioTabWebDesign{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 45px;
+        margin-bottom: 64px;
+        @include max(767px){
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+    }
+    #portfolioTabPotrait{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 45px;
+        margin-bottom: 64px;
+        @include max(767px){
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+    }
+    #portfolioTabMobileApp{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 45px;
+        margin-bottom: 64px;
+        @include max(767px){
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
         }
     }
     #load-more-btn{

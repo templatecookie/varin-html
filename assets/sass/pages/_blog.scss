@@ -4,8 +4,9 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 45px;
         margin-bottom: 64px;
-        @include max(991px){
+        @include max(767px){
             grid-template-columns: 1fr;
+            grid-gap: 20px;
         }
     }
     #load-more-btn{

@@ -11,7 +11,6 @@ function displayPosts(posts) {
     const slicePosts = posts.slice(0, 6);
     const portfolio = document.getElementById("portfolio");
     for (const post of slicePosts) {
-        console.log(post);
         const div = document.createElement("div");
         div.classList.add("portfolio-card");
         div.innerHTML = `
@@ -19,7 +18,7 @@ function displayPosts(posts) {
                 <a href="singleBlog.html"><img src=${post.portfolio_feature_img} /></a>
             </div>
             <div class="portfolio-card__meta">
-                <p>Website</p>
+                <p>${post.portfolio_category}</p>
             </div>
             <h2 class="portfolio-card__title"><a href="singleBlog.html">${post.portfolio_title}</a></h2>
             <a class="portfolio-card__btn" href="singlePortfolio.html">View Project</a>
@@ -33,7 +32,7 @@ const loadMore = document.getElementById("load-more-btn");
 
 function loadDuePosts(e) {
     e.preventDefault();
-    fetch("https://rakib0101.github.io/blog_json/v-card-blog.json")
+    fetch("https://rakib0101.github.io/blog_json/v-card-portfolio.json")
         .then((res) => res.json())
         .then((data) => {
             displayDuePosts(data);
@@ -42,28 +41,141 @@ function loadDuePosts(e) {
 }
 
 function displayDuePosts(posts) {
-    console.log(posts);
     const slicePosts = posts.slice(0, 6);
     const portfolio = document.getElementById("portfolio");
     for (const post of slicePosts) {
-        console.log(post);
         const div = document.createElement("div");
-        div.classList.add("blog-card");
+        div.classList.add("portfolio-card");
         div.innerHTML = `
-            <div class="blog-card__feature-image">
-                <a href="singleBlog.html"><img src=${post.feature_img} /></a>
+            <div class="portfolio-card__feature-image">
+                <a href="singleBlog.html"><img src=${post.portfolio_feature_img} /></a>
             </div>
-            <div class="blog-card__meta">
-                <p class="blog-card__meta-left">${post.blog_category}</p>
-                <p class="blog-card__meta-right">${post.published_date}</p>
+            <div class="portfolio-card__meta">
+                <p>${post.portfolio_category}</p>
             </div>
-            <h2 class="blog-card__title"><a href="singleBlog.html">${post.blog_title}</a></h2>
-            <p class="blog-card__short-desc">${post.blog_short_desc}</P>
-            <p class="blog-card__author">by <span>${post.author}</span></p>
-            <a class="blog-card__btn" href="singleBlog.html">Read More</a>
+            <h2 class="portfolio-card__title"><a href="singleBlog.html">${post.portfolio_title}</a></h2>
+            <a class="portfolio-card__btn" href="singlePortfolio.html">View Project</a>
         `;
         portfolio.appendChild(div);
     }
 }
 
 loadMore.addEventListener("click", loadDuePosts);
+
+
+// tab script
+
+function tab(category) {
+    fetch("https://rakib0101.github.io/blog_json/v-card-portfolio.json")
+        .then((res) => res.json())
+        .then((data) => {
+            const filterData = data.filter((d) => d.portfolio_category === category);
+            displayTabPosts(filterData);
+        });
+}
+
+function displayTabPosts(posts) {
+    document.getElementById("portfolio").style.display = "none";
+    const portfolioTabImages = document.getElementById("portfolioTabImages");
+    const portfolioTabPotrait = document.getElementById("portfolioTabPotrait");
+    const portfolioTabWebDesign = document.getElementById("portfolioTabWebDesign");
+    const portfolioTabMobileApp = document.getElementById("portfolioTabMobileApp");
+    for (const post of posts) {
+        if (post.portfolio_category === 'Images') {
+            document.getElementById("portfolioTabImages").style.display =
+                "grid";
+            document.getElementById("portfolioTabPotrait").style.display =
+                "none";
+            document.getElementById("portfolioTabMobileApp").style.display = 'none';
+            document.getElementById("portfolioTabWebDesign").style.display =
+                "none";
+            const div = document.createElement("div");
+            div.classList.add("portfolio-card");
+            div.innerHTML = `
+            <div class="portfolio-card__feature-image">
+                <a href="singleBlog.html"><img src=${post.portfolio_feature_img} /></a>
+            </div>
+            <div class="portfolio-card__meta">
+                <p>${post.portfolio_category}</p>
+            </div>
+            <h2 class="portfolio-card__title"><a href="singleBlog.html">${post.portfolio_title}</a></h2>
+            <a class="portfolio-card__btn" href="singlePortfolio.html">View Project</a>
+        `;
+
+            portfolioTabImages.appendChild(div);
+        }
+        if (post.portfolio_category === "Potrait") {
+            document.getElementById("portfolioTabPotrait").style.display =
+                "grid";
+             document.getElementById("portfolioTabWebDesign").style.display =
+                 "none";
+             document.getElementById("portfolioTabMobileApp").style.display =
+                 "none";
+             document.getElementById("portfolioTabImages").style.display =
+                 "none";
+            const div = document.createElement("div");
+            div.classList.add("portfolio-card");
+            div.innerHTML = `
+            <div class="portfolio-card__feature-image">
+                <a href="singleBlog.html"><img src=${post.portfolio_feature_img} /></a>
+            </div>
+            <div class="portfolio-card__meta">
+                <p>${post.portfolio_category}</p>
+            </div>
+            <h2 class="portfolio-card__title"><a href="singleBlog.html">${post.portfolio_title}</a></h2>
+            <a class="portfolio-card__btn" href="singlePortfolio.html">View Project</a>
+        `;
+
+            portfolioTabPotrait.appendChild(div);
+        }
+        if (post.portfolio_category === "Web Design") {
+            document.getElementById("portfolioTabWebDesign").style.display =
+                "grid";
+             document.getElementById("portfolioTabImages").style.display =
+                 "none";
+             document.getElementById("portfolioTabMobileApp").style.display =
+                 "none";
+             document.getElementById("portfolioTabPotrait").style.display =
+                 "none";
+            const div = document.createElement("div");
+            div.classList.add("portfolio-card");
+            div.innerHTML = `
+            <div class="portfolio-card__feature-image">
+                <a href="singleBlog.html"><img src=${post.portfolio_feature_img} /></a>
+            </div>
+            <div class="portfolio-card__meta">
+                <p>${post.portfolio_category}</p>
+            </div>
+            <h2 class="portfolio-card__title"><a href="singleBlog.html">${post.portfolio_title}</a></h2>
+            <a class="portfolio-card__btn" href="singlePortfolio.html">View Project</a>
+        `;
+
+            portfolioTabWebDesign.appendChild(div);
+        }
+        if (post.portfolio_category === "Mobile App") {
+            document.getElementById("portfolioTabMobileApp").style.display =
+                "grid";
+             document.getElementById("portfolioTabWebDesign").style.display =
+                 "none";
+             document.getElementById("portfolioTabImages").style.display =
+                 "none";
+             document.getElementById("portfolioTabPotrait").style.display =
+                 "none";
+            const div = document.createElement("div");
+            div.classList.add("portfolio-card");
+            div.innerHTML = `
+            <div class="portfolio-card__feature-image">
+                <a href="singleBlog.html"><img src=${post.portfolio_feature_img} /></a>
+            </div>
+            <div class="portfolio-card__meta">
+                <p>${post.portfolio_category}</p>
+            </div>
+            <h2 class="portfolio-card__title"><a href="singleBlog.html">${post.portfolio_title}</a></h2>
+            <a class="portfolio-card__btn" href="singlePortfolio.html">View Project</a>
+        `;
+            portfolioTabMobileApp.appendChild(div);
+        }
+        
+    }
+
+}
