@@ -1,20 +1,21 @@
-.brands{
-    .section-title{
-        text-align: center;
+.brands {
+  .section-title {
+    text-align: center;
+  }
+  padding-bottom: 20px;
+  .brand {
+    &-item {
+      width: 80%;
+      height: 50px;
+      margin: 0 auto;
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        img {
+          object-fit: cover;
+        }
+      }
     }
-    .brand-wrap{
-    align-items: center;
-    .brand{
-        box-sizing: border-box;
-        text-align: center;
-        img{
-            width: 100%;
-        }
-        @include max(767px){
-            img{
-                width: 50%;
-            }
-        }
-    }   
-}
+  }
 }

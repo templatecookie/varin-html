@@ -32,6 +32,9 @@ a {
 main {
   background-color: #f7f7f7;
 }
+img {
+  max-width: 100%;
+}
 .page-title {
   margin-bottom: 48px;
 }
@@ -52,10 +55,13 @@ main {
 .mySlideText {
   display: none;
 }
-.main-bar{
-   background-color: #F7F7F7;
-    padding: 40px;
-    @include max(767px){
-        padding: 20px;
-    }
+.main-bar {
+  background-color: #f7f7f7;
+  padding: 40px;
+  @include max(767px) {
+    padding: 20px;
+  }
+}
+.section-padding {
+  padding: 40px 0;
 }
