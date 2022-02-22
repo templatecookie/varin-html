@@ -1,5 +1,10 @@
 .clients-gallery{
     position: relative;
+    height: 400px;  
+    padding: 20px;
+    @include max(767px){
+        display: none;
+    }
     img{
         display: inline-block;
     }
@@ -7,44 +12,44 @@
         position: absolute;
         width: 60px;
         left: 20px;
-        top: 0px;
+        top: 20px;
     }
     .img3{
         position: absolute;
-        right: 75px;
-        top: 30px;
+        right: 130px;
+        top: 50px;
         width: 60px;
     }
     .img4{
         position: absolute;
-        top: 50px;
-        left: 150px;
+        top: 70px;
+        left: 200px;
     }
     .img5{
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 20px;
+        top: 20px;
         width: 30px;
     }
     .img6{
         position: absolute;
-        left: 20px;
-        top: 75px;
+        left: 60px;
+        top: 120px;
     }
     .img7{
         position: absolute;
-        top: 180px;
+        top: 200px;
         left: 60%;
     }
     .img8{
         position: absolute;
-        right: 0px;
-        top: 80px;
+        right: 20px;
+        top: 120px;
     }
     .img9{
         width: 100px;
         position: absolute;
-        left: 50px;
-        top: 120px;
+        left: 70px;
+        top: 180px;
     }
 }

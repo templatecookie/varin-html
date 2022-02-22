@@ -1,9 +1,12 @@
-@import "base/reset";
 @import "abstracts/mixins";
+@import "base/reset";
+
+
 //components
 @import "components/sidebar";
 @import "components/btn";
 @import "components/blog-card";
+@import "components/portfolio-card";
 
 //pages
 @import "pages/home";
@@ -12,3 +15,4 @@
 @import "pages/portfolio";
 @import "pages/singlePortfolio";
 @import "pages/contact";
+@import "pages/resume";

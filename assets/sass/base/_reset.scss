@@ -52,3 +52,10 @@ main {
 .mySlideText {
   display: none;
 }
+.main-bar{
+   background-color: #F7F7F7;
+    padding: 40px;
+    @include max(767px){
+        padding: 20px;
+    }
+}

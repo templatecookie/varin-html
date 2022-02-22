@@ -3,16 +3,21 @@
     border: 1px solid #E2E2E2;
     box-sizing: border-box;
     border-radius: 5px;
+    @include max(375px){
+        padding: 16px;
+    }
     &__feature-image{
         margin-bottom: 16px;
-        img{
-            width: 100%;
-            border-radius: 5px;
+        a{
+            display: block;
+            img{
+                width: 100%;
+                border-radius: 5px;
+            }
         }
     }
     &__meta{
-        margin-bottom: 16px;
-        
+        margin-bottom: 16px;    
     }
     &__title{
         a{

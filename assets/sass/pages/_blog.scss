@@ -1,23 +1,22 @@
-@import "../components/blog-card";
-
-.main-bar {
-  background-color: #f7f7f7;
-  padding: 40px;
-  #blog {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 45px;
-    margin-bottom: 64px;
-  }
-  #load-more-btn {
-    outline: none;
-    border: none;
-    font-size: 14px;
-    line-height: 20px;
-    color: #0063f7;
-    cursor: pointer;
-    display: block;
-    margin: 0px auto 64px;
-    background-color: transparent;
-  }
+.main-bar{
+    #blog{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 45px;
+        margin-bottom: 64px;
+        @include max(991px){
+            grid-template-columns: 1fr;
+        }
+    }
+    #load-more-btn{
+        outline: none;
+        border: none;
+        font-size: 14px;
+        line-height: 20px;
+        color: #0063F7;
+        cursor: pointer;
+        display: block;
+        margin: 0px auto 64px;
+        background-color: transparent;
+    }
 }

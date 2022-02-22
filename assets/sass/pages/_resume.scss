@@ -1,0 +1,36 @@
+.education{
+    &-top{
+        display: flex;
+        justify-content: space-between;
+    }
+    .experience-card{
+        display: flex;
+        padding: 8px;
+        border: 1px solid #E2E2E2;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-bottom: 12px;
+        &__left{
+            margin-right: 8px;
+            img{
+                padding: 12px 8px;
+                background-color: #fff;
+            }
+        }
+        &__right{
+            h2{
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+            h3{
+                font-size: 14px;
+                margin-bottom: 16px;
+                color: #707070;
+            }        
+            p{
+                font-size: 14px;
+                color: #707070;
+            }
+        }
+    }
+}

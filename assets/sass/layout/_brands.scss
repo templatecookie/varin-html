@@ -1,0 +1,20 @@
+.brands{
+    .section-title{
+        text-align: center;
+    }
+    .brand-wrap{
+    align-items: center;
+    .brand{
+        box-sizing: border-box;
+        text-align: center;
+        img{
+            width: 100%;
+        }
+        @include max(767px){
+            img{
+                width: 50%;
+            }
+        }
+    }   
+}
+}
