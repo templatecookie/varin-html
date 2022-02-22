@@ -2,12 +2,13 @@
     background-color: #F7F7F7;
     overflow: hidden;
     padding: 16px;
-    @include max(991px){
-        padding: 2px;
-    }
     position: fixed;
     top: 0;
     bottom: 0;
+    @include max(525px){
+        padding: 2px;
+        left: 0;
+    }
     &-profile{
         margin: 16px;
         @include max(991px){
