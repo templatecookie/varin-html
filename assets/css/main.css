@@ -732,7 +732,7 @@ img {
   background-color: #c6c6c6;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .card {
     margin-bottom: 15px;
   }
@@ -744,7 +744,7 @@ img {
   margin-top: -70px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .clients-gallery {
     display: none;
   }
