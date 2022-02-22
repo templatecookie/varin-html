@@ -273,9 +273,15 @@ img {
   border-radius: 5px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 991px) {
   .blog-card {
     padding: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-card {
+    padding: 8px;
   }
 }
 
@@ -290,6 +296,8 @@ img {
 .blog-card__feature-image a img {
   width: 100%;
   border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .blog-card__meta {
@@ -884,10 +892,11 @@ img {
   margin-bottom: 64px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .main-bar #blog {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 }
 
@@ -1050,6 +1059,28 @@ img {
   color: #161616;
 }
 
+.main-bar .title-tab-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.main-bar .title-tab-wrapper .tab li {
+  display: inline-block;
+  padding: 0px 12px;
+}
+
+.main-bar .title-tab-wrapper .tab li a {
+  color: #707070;
+  cursor: pointer;
+}
+
 .main-bar #portfolio {
   display: -ms-grid;
   display: grid;
@@ -1059,10 +1090,79 @@ img {
   margin-bottom: 64px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .main-bar #portfolio {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+.main-bar #portfolioTabImages {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 45px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 767px) {
+  .main-bar #portfolioTabImages {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+.main-bar #portfolioTabWebDesign {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 45px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 767px) {
+  .main-bar #portfolioTabWebDesign {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+.main-bar #portfolioTabPotrait {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 45px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 767px) {
+  .main-bar #portfolioTabPotrait {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
+
+.main-bar #portfolioTabMobileApp {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 45px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 767px) {
+  .main-bar #portfolioTabMobileApp {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 }
 

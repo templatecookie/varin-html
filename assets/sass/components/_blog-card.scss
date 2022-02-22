@@ -3,8 +3,11 @@
     border: 1px solid #E2E2E2;
     box-sizing: border-box;
     border-radius: 5px;
-    @include max(375px){
+    @include max(991px){
         padding: 16px;
+    }
+    @include max(767px){
+        padding: 8px;
     }
     &__feature-image{
         margin-bottom: 16px;
@@ -13,6 +16,7 @@
             img{
                 width: 100%;
                 border-radius: 5px;
+                object-fit: cover;
             }
         }
     }
