@@ -34,3 +34,4 @@ function showSlides(n) {
     slidesImage[slideImgIndex - 1].style.display = "block";
     slidesText[slideTextIndex - 1].style.display = "block";
 }
+

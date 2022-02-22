@@ -484,6 +484,12 @@ main {
   padding-left: 35px;
 }
 
+@media (max-width: 767px) {
+  .service-card {
+    margin-bottom: 20px;
+  }
+}
+
 .service-history {
   color: #161616;
   display: -webkit-box;
