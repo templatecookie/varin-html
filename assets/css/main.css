@@ -875,12 +875,12 @@ img {
 .brands .brand-item a {
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: 40px;
 }
 
 .brands .brand-item a img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .main-bar #blog {
