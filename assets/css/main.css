@@ -762,7 +762,10 @@ img {
 
 @media (max-width: 991px) {
   .clients-gallery {
-    display: none;
+    margin-top: 20px;
+  }
+  .clients-gallery img {
+    width: 100%;
   }
 }
 
@@ -1431,7 +1434,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 8px;
-  border: 1px solid #E2E2E2;
+  border: 1px solid #e2e2e2;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
@@ -1461,4 +1464,137 @@ img {
 .education .experience-card__right p {
   font-size: 14px;
   color: #707070;
+}
+
+.institution {
+  border-left: 1px solid #e2e2e2;
+  padding: 0 15px;
+}
+
+.institution-info {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.institution-info::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #707070;
+  position: absolute;
+  left: -23px;
+  top: 3px;
+}
+
+.institution-info h3 {
+  padding: 0 10px 10px 0;
+}
+
+.institution-info p.name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+}
+
+.institution-info p.year {
+  font-size: 16px;
+  line-height: 24px;
+  color: #c6c6c6;
+  padding-bottom: 15px;
+}
+
+.institution-info p.details {
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+}
+
+.skills {
+  padding: 50px 0;
+}
+
+.skills-title {
+  padding-bottom: 30px;
+}
+
+.skills-left {
+  border-left: 1px solid #e2e2e2;
+  padding-left: 15px;
+}
+
+.skills-left-info {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.skills-left-info p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 5px;
+  color: #707070;
+}
+
+.skills-left-info .skill-container {
+  background-color: #ededed;
+  width: 80%;
+  height: 5px;
+}
+
+.skills-left-info .skill {
+  background-color: #0063f7;
+  padding: 1%;
+  height: 5px;
+}
+
+.skills-left-info .xd {
+  width: 90%;
+}
+
+.skills-left-info .figma {
+  width: 80%;
+}
+
+.skills-left-info .illustrator {
+  width: 95%;
+}
+
+.skills-left-info .photoshop {
+  width: 85%;
+}
+
+.skills-left-info .sketchup {
+  width: 97%;
+}
+
+.skills-left-info .autocad {
+  width: 75%;
+}
+
+.skills-left-info .lumion {
+  width: 65%;
+}
+
+.skills-left-info .gis {
+  width: 79%;
+}
+
+.skills-left-info .python {
+  width: 88%;
+}
+
+.skills-left-info .c {
+  width: 87%;
+}
+
+.skills-left-info::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #707070;
+  position: absolute;
+  left: -23px;
+  top: 4px;
 }
