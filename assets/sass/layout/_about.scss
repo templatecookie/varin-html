@@ -1,10 +1,12 @@
 .about {
-  @include max(768px) {
-    margin-top: 50px;
+  .section-title {
+    @include max(991px) {
+      margin-top: 50px;
+    }
   }
   &-img {
     width: 100%;
-    height: 449px;
+    height: auto;
     img {
       width: 100%;
       height: 100%;

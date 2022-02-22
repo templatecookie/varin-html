@@ -1,15 +1,12 @@
 .service-history {
+  margin-top: 100px;
   color: #161616;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   h2 {
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
-    width: 149px;
-    height: 149px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,33 +18,34 @@
     text-align: center;
     font-size: 16px;
     line-height: 24px;
+    @include max(991px) {
+      text-align: left;
+    }
   }
-  &--complete {
-    h2 {
+  h2 {
+    width: 149px;
+    height: 149px;
+    &.complete {
       background: #fce7be;
     }
-  }
-  &--years {
-    h2 {
+    &.years {
       background: #daf3ff;
     }
-  }
-  &--clients {
-    h2 {
+    &.clients {
       background: #ffcdcd;
     }
-  }
-  &--award {
-    h2 {
+    &.award {
       background: #8bdb81;
     }
   }
-  @include max(767px) {
-    flex-direction: column;
-  }
+
   &-card {
-    @include max(767px) {
+    @include max(991px) {
       margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
   }
 }
