@@ -4,9 +4,5 @@
   margin-top: -70px;
   @include max(991px) {
     margin-top: 20px;
-
-    img {
-      width: 100%;
-    }
   }
 }

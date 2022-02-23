@@ -12,4 +12,9 @@
     background-color: transparent;
     color: #0063f7;
   }
+  @include max(480px) {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 20px;
+  }
 }

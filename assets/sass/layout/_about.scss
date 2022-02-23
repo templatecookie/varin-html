@@ -1,8 +1,6 @@
 .about {
-  .section-title {
-    @include max(991px) {
-      margin-top: 50px;
-    }
+  .section-title h2 {
+    padding-bottom: 15px;
   }
   &-img {
     width: 100%;
