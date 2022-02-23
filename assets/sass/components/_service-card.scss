@@ -1,7 +1,7 @@
 .service-card {
   padding: 15px;
   border: 1px solid #e2e2e2;
-  height: 350px;
+
   @include max(991px) {
     height: auto;
     margin-bottom: 20px;
