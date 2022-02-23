@@ -52,13 +52,22 @@
                 text-align: center;
                 li{
                     display: inline-block;
-                    width: 16px;
-                    height: 16px;
-                    border-radius: 50%;
                     margin: 0 8px;
-                    
                     a{
-                        img{
+                        background: #707070;
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover{
+                                background: #0063F7;
+                        }
+                        i{
+                            color: #fff;
+                            font-size: 12px;
+                            border-radius: 50%;
                             width: 100%;
                         }
                         
@@ -68,17 +77,24 @@
         }
     }
     &-menu{
-        margin-bottom: 48px;
+        margin-bottom: 32px;
         ul{
             li{
-                padding: 6px 0px;
+                margin-bottom: 10px;
                 @include max(991px){
                     margin: 30px 0;
                 }
-                &:hover, &:active{
-                        background-color: #EDEDED;
+                &:hover, &:active, &:visited{
+                        a{
+                            color: #000;
+                            background-color: #EDEDED;
+                            i{
+                                color: #0063F7;
+                            }
+                        }
                     }
                 a{
+                    padding: 6px 0px;
                     display: flex;
                     align-items: center;
                     @include max(991px){
@@ -94,7 +110,8 @@
                             display: none;
                         }
                     }
-                    img{
+                    i{
+                        color: #707070;
                         width: 16px;
                         height: 16px;
                         margin: 0px 12px;
@@ -114,8 +131,10 @@
             line-height: 20px;
             letter-spacing: -0.001em;
             color: #707070;
+            margin-bottom: 10px;
         }
-        img {
+        i {
+            color: #707070;
             width: 16px;
             height: 16px;
             margin: 0px 12px;

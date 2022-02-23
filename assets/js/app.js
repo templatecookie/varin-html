@@ -35,3 +35,7 @@ function showSlides(n) {
     slidesText[slideTextIndex - 1].style.display = "block";
 }
 
+
+    
+
+

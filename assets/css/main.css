@@ -77,6 +77,15 @@ img {
   padding: 40px 0;
 }
 
+a.active {
+  color: #000;
+  background-color: #EDEDED;
+}
+
+a.active i {
+  color: #0063F7 !important;
+}
+
 .sidebar {
   background-color: #F7F7F7;
   overflow: hidden;
@@ -156,22 +165,42 @@ img {
 
 .sidebar-profile__social-media ul li {
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
   margin: 0 8px;
 }
 
-.sidebar-profile__social-media ul li a img {
+.sidebar-profile__social-media ul li a {
+  background: #707070;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar-profile__social-media ul li a:hover {
+  background: #0063F7;
+}
+
+.sidebar-profile__social-media ul li a i {
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
   width: 100%;
 }
 
 .sidebar-menu {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 .sidebar-menu ul li {
-  padding: 6px 0px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 991px) {
@@ -180,11 +209,17 @@ img {
   }
 }
 
-.sidebar-menu ul li:hover, .sidebar-menu ul li:active {
+.sidebar-menu ul li:hover a, .sidebar-menu ul li:active a, .sidebar-menu ul li:visited a {
+  color: #000;
   background-color: #EDEDED;
 }
 
+.sidebar-menu ul li:hover a i, .sidebar-menu ul li:active a i, .sidebar-menu ul li:visited a i {
+  color: #0063F7;
+}
+
 .sidebar-menu ul li a {
+  padding: 6px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,7 +249,8 @@ img {
   }
 }
 
-.sidebar-menu ul li a img {
+.sidebar-menu ul li a i {
+  color: #707070;
   width: 16px;
   height: 16px;
   margin: 0px 12px;
@@ -237,9 +273,11 @@ img {
   line-height: 20px;
   letter-spacing: -0.001em;
   color: #707070;
+  margin-bottom: 10px;
 }
 
-.sidebar-contact img {
+.sidebar-contact i {
+  color: #707070;
   width: 16px;
   height: 16px;
   margin: 0px 12px;
@@ -293,6 +331,7 @@ img {
 
 .blog-card__feature-image a img {
   width: 100%;
+  height: 250px;
   border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -382,6 +421,7 @@ img {
 
 .portfolio-card__feature-image a img {
   width: 100%;
+  height: 250px;
   border-radius: 5px;
 }
 
@@ -597,6 +637,7 @@ img {
   font-weight: 700;
   font-size: 40px;
   line-height: 48px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
