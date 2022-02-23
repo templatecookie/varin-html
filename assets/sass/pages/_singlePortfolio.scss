@@ -13,6 +13,10 @@
         grid-template-columns: 3fr 1fr;
         margin-bottom: 48px;
         &-left{
+            @include max(767px){
+                grid-column: 1/5;
+                grid-row: 2/3;
+            }
             h2{
                 font-weight: bold;
                 font-size: 24px;
@@ -33,12 +37,24 @@
             }
         }
         &-right{
+            @include max(767px){
+                grid-row: 1/2;
+            }
             &-top{
                 display: flex;
                 margin-bottom: 48px;
+                @include max(1200px){
+                    flex-direction: column;
+                }
+                @include max(767px){
+                    margin-bottom: 10px;
+                }
                 p{
                     display: flex;
                     align-items: center;
+                    @include max(1200px){
+                    margin-bottom: 10px;;
+                }
                 }
             }
             &-bottom{
