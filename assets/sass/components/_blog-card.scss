@@ -75,21 +75,5 @@
         color: #707070;
         margin-bottom: 40px;
     }
-    &__btn{
-        font-size: 14px;
-        line-height: 20px;
-        color: #0063F7;
-        
-        i{
-            display: none;
-            margin-left: -20px;
-            transition: margin-left 0.7s ease-in-out;
-        }
-        &:hover{
-            i{
-                display: inline-block;
-                margin-left: 5px;
-            }
-        }
-    }
+    
 }

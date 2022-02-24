@@ -462,24 +462,6 @@ a.active i {
   margin-bottom: 40px;
 }
 
-.blog-card__btn {
-  font-size: 14px;
-  line-height: 20px;
-  color: #0063F7;
-}
-
-.blog-card__btn i {
-  display: none;
-  margin-left: -20px;
-  -webkit-transition: margin-left 0.7s ease-in-out;
-  transition: margin-left 0.7s ease-in-out;
-}
-
-.blog-card__btn:hover i {
-  display: inline-block;
-  margin-left: 5px;
-}
-
 .portfolio-card {
   padding: 32px;
   border: 1px solid #E2E2E2;
@@ -549,22 +531,6 @@ a.active i {
   line-height: 20px;
   color: #707070;
   margin-bottom: 40px;
-}
-
-.portfolio-card__btn {
-  font-size: 14px;
-  line-height: 20px;
-  color: #0063F7;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.portfolio-card__btn i {
-  display: none;
-}
-
-.portfolio-card__btn:hover i {
-  display: inline-block;
 }
 
 .hero-content h1 {

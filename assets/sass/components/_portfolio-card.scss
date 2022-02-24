@@ -56,18 +56,4 @@
         color: #707070;
         margin-bottom: 40px;
     }
-    &__btn{
-        font-size: 14px;
-        line-height: 20px;
-        color: #0063F7;
-        transition: all 0.3s ease-in-out;
-        i{
-            display: none;
-        }
-        &:hover{
-            i{
-                display: inline-block;
-            }
-        }
-    }
 }
