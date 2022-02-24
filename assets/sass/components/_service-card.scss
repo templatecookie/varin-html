@@ -43,21 +43,8 @@
       color: #707070;
       padding-bottom: 15px;
     }
-    &-btn {
-      a {
-        background-color: transparent;
-        color: #0063f7;
-        text-align: left;
-        padding-left: 0;
-        &:hover {
-          background-color: #0063f7;
-          color: #f7f7f7;
-          padding-left: 35px;
-        }
-      }
+    @include max(767px) {
+      margin-bottom: 20px;
     }
-  }
-  @include max(767px) {
-    margin-bottom: 20px;
   }
 }

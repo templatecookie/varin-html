@@ -24,14 +24,11 @@
       }
     }
     &__btn {
-      a {
+      a:last-child {
         padding: 15px 35px;
         background-color: transparent;
         color: #0063f7;
-        &:hover {
-          background-color: #0063f7;
-          color: #f7f7f7;
-        }
+
         @include max(991px) {
           margin-top: 15px;
         }

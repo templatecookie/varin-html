@@ -9,12 +9,51 @@
   display: inline-block;
   transition: 0.3s all ease-in;
   &:hover {
-    background-color: transparent;
-    color: #0063f7;
+    background-color: #004fc6;
   }
   @include max(480px) {
     font-size: 14px;
     line-height: 18px;
     padding: 10px 20px;
+  }
+}
+
+.download__btn {
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 35px;
+    opacity: 0;
+    top: 6px;
+    transition: 0.3s all ease-in;
+  }
+  &:hover {
+    img {
+      left: 10px;
+      opacity: 1;
+    }
+  }
+}
+
+.hire-btn {
+  position: relative;
+  color: #0063f7;
+  background-color: transparent;
+  text-align: left;
+  padding-left: 0;
+  i {
+    position: absolute;
+    top: 14px;
+    right: 35px;
+    opacity: 0;
+    transition: 0.3s all ease-in;
+  }
+  &:hover {
+    background-color: transparent;
+    i {
+      right: 17px;
+      opacity: 1;
+    }
   }
 }

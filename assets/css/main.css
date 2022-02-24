@@ -303,8 +303,7 @@ a.active i {
 }
 
 .btn_primary:hover {
-  background-color: transparent;
-  color: #0063f7;
+  background-color: #004fc6;
 }
 
 @media (max-width: 480px) {
@@ -313,6 +312,50 @@ a.active i {
     line-height: 18px;
     padding: 10px 20px;
   }
+}
+
+.download__btn {
+  position: relative;
+}
+
+.download__btn img {
+  position: absolute;
+  left: 35px;
+  opacity: 0;
+  top: 6px;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+.download__btn:hover img {
+  left: 10px;
+  opacity: 1;
+}
+
+.hire-btn {
+  position: relative;
+  color: #0063f7;
+  background-color: transparent;
+  text-align: left;
+  padding-left: 0;
+}
+
+.hire-btn i {
+  position: absolute;
+  top: 14px;
+  right: 35px;
+  opacity: 0;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+.hire-btn:hover {
+  background-color: transparent;
+}
+
+.hire-btn:hover i {
+  right: 17px;
+  opacity: 1;
 }
 
 .blog-card {
@@ -553,19 +596,14 @@ a.active i {
   }
 }
 
-.hero-content__btn a {
+.hero-content__btn a:last-child {
   padding: 15px 35px;
   background-color: transparent;
   color: #0063f7;
 }
 
-.hero-content__btn a:hover {
-  background-color: #0063f7;
-  color: #f7f7f7;
-}
-
 @media (max-width: 991px) {
-  .hero-content__btn a {
+  .hero-content__btn a:last-child {
     margin-top: 15px;
   }
 }
@@ -665,21 +703,8 @@ a.active i {
   padding-bottom: 15px;
 }
 
-.service-card-content-btn a {
-  background-color: transparent;
-  color: #0063f7;
-  text-align: left;
-  padding-left: 0;
-}
-
-.service-card-content-btn a:hover {
-  background-color: #0063f7;
-  color: #f7f7f7;
-  padding-left: 35px;
-}
-
 @media (max-width: 767px) {
-  .service-card {
+  .service-card-content {
     margin-bottom: 20px;
   }
 }
