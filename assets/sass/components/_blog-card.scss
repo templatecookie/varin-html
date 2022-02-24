@@ -79,13 +79,16 @@
         font-size: 14px;
         line-height: 20px;
         color: #0063F7;
-        transition: all 0.3s ease-in-out;
+        
         i{
             display: none;
+            margin-left: -20px;
+            transition: margin-left 0.7s ease-in-out;
         }
         &:hover{
             i{
                 display: inline-block;
+                margin-left: 5px;
             }
         }
     }

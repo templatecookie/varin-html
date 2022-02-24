@@ -25,8 +25,12 @@
             @include max(425px){
                 flex-direction: column;
                 &>p{
-                    margin-bottom: 10px;
+                    margin-bottom: 16px;
+                    margin-right: 0px;
                 }
+            }
+            &>p{
+                margin-right: 16px;
             }
             p{
                 display: flex;

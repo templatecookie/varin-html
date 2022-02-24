@@ -65,6 +65,7 @@ img {
 .main-bar {
   background: #f7f7f7;
   padding: 40px;
+  margin-top: 20px;
 }
 
 @media (max-width: 767px) {
@@ -422,16 +423,18 @@ a.active i {
   font-size: 14px;
   line-height: 20px;
   color: #0063F7;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 .blog-card__btn i {
   display: none;
+  margin-left: -20px;
+  -webkit-transition: margin-left 0.7s ease-in-out;
+  transition: margin-left 0.7s ease-in-out;
 }
 
 .blog-card__btn:hover i {
   display: inline-block;
+  margin-left: 5px;
 }
 
 .portfolio-card {
@@ -868,6 +871,11 @@ a.active i {
 .testimonial__qoute-text {
   padding-left: 40px;
   margin-bottom: 64px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #707070;
+  height: 100px;
+  overflow-y: scroll;
 }
 
 .testimonial__client-info {
@@ -919,6 +927,12 @@ a.active i {
 .testimonial__client-info .client__info-name {
   font-size: 18px;
   color: #161616;
+  margin-bottom: 4px;
+}
+
+.testimonial__client-info .client__info-designation {
+  font-size: 16px;
+  color: #707070;
 }
 
 .testimonial .slider-next-prev-btn {
@@ -1093,8 +1107,13 @@ a.active i {
             flex-direction: column;
   }
   .single-blog__meta-right > p {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    margin-right: 0px;
   }
+}
+
+.single-blog__meta-right > p {
+  margin-right: 16px;
 }
 
 .single-blog__meta-right p {

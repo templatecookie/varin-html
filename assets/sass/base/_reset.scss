@@ -55,6 +55,7 @@ img {
 .main-bar {
   background: #f7f7f7;
   padding: 40px;
+  margin-top: 20px;
   @include max(767px) {
     padding: 10px;
   }
