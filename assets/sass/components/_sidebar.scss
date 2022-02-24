@@ -3,8 +3,8 @@
     overflow: hidden;
     padding: 16px;
     position: fixed;
-    top: 0;
-    bottom: 0;
+    top: 20px;
+    bottom: 20px;
     @include max(525px){
         padding: 2px;
         left: 0;
@@ -15,8 +15,8 @@
             margin: 2px;
         }
         &__image{
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             @include max(991px){
                 width: 32px;
                 height: 32px;
