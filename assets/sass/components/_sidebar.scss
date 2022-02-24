@@ -5,6 +5,10 @@
     position: fixed;
     top: 20px;
     bottom: 20px;
+    @include max(991px){
+        left: 0;
+        padding: 8px;
+    }
     @include max(525px){
         padding: 2px;
         left: 0;
@@ -43,6 +47,7 @@
         }
         &__designation{
             margin-bottom: 14px;
+            color: #707070;
         }
         &__social-media{
             @include max(991px){
@@ -135,8 +140,6 @@
         }
         i {
             color: #707070;
-            width: 16px;
-            height: 16px;
             margin: 0px 12px;
         }
     }

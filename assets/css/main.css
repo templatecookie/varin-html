@@ -95,6 +95,13 @@ a.active i {
   bottom: 20px;
 }
 
+@media (max-width: 991px) {
+  .sidebar {
+    left: 0;
+    padding: 8px;
+  }
+}
+
 @media (max-width: 525px) {
   .sidebar {
     padding: 2px;
@@ -151,6 +158,7 @@ a.active i {
 
 .sidebar-profile__designation {
   margin-bottom: 14px;
+  color: #707070;
 }
 
 @media (max-width: 991px) {
@@ -278,8 +286,6 @@ a.active i {
 
 .sidebar-contact i {
   color: #707070;
-  width: 16px;
-  height: 16px;
   margin: 0px 12px;
 }
 
@@ -315,6 +321,18 @@ a.active i {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.12);
+}
+
+.blog-card:hover .blog-card__meta-left {
+  background-color: #F7F7F7;
 }
 
 @media (max-width: 991px) {
@@ -369,6 +387,7 @@ a.active i {
 
 .blog-card__meta-left {
   padding: 8px 16px;
+  background-color: #fff;
 }
 
 .blog-card__meta-right {
@@ -403,6 +422,16 @@ a.active i {
   font-size: 14px;
   line-height: 20px;
   color: #0063F7;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-card__btn i {
+  display: none;
+}
+
+.blog-card__btn:hover i {
+  display: inline-block;
 }
 
 .portfolio-card {
@@ -411,6 +440,18 @@ a.active i {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-card:hover {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-card:hover .portfolio-card__meta {
+  background-color: #F7F7F7;
 }
 
 @media (max-width: 375px) {
@@ -435,6 +476,9 @@ a.active i {
 
 .portfolio-card__meta {
   margin-bottom: 16px;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #fff;
 }
 
 .portfolio-card__title a {
@@ -465,6 +509,16 @@ a.active i {
   font-size: 14px;
   line-height: 20px;
   color: #0063F7;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-card__btn i {
+  display: none;
+}
+
+.portfolio-card__btn:hover i {
+  display: inline-block;
 }
 
 .hero-content h1 {
@@ -1211,6 +1265,11 @@ a.active i {
 .main-bar .title-tab-wrapper .tab li a {
   color: #707070;
   cursor: pointer;
+}
+
+.main-bar .title-tab-wrapper .tab li a:hover {
+  border-bottom: 1px solid #161616;
+  color: #161616;
 }
 
 .main-bar #portfolio {

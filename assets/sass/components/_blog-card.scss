@@ -3,7 +3,18 @@
     border: 1px solid #E2E2E2;
     box-sizing: border-box;
     border-radius: 5px;
-    
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.12);
+    }
+    &:hover{
+        .blog-card__meta{
+            &-left{
+                background-color: #F7F7F7;
+            }
+        }
+    }
     @include max(991px){
         padding: 16px;
     }
@@ -34,7 +45,8 @@
             font-size: 14px;
         }
         &-left{
-            padding: 8px 16px;    
+            padding: 8px 16px;
+            background-color: #fff;    
         }
         &-right{
                 text-align: right;
@@ -67,5 +79,14 @@
         font-size: 14px;
         line-height: 20px;
         color: #0063F7;
+        transition: all 0.3s ease-in-out;
+        i{
+            display: none;
+        }
+        &:hover{
+            i{
+                display: inline-block;
+            }
+        }
     }
 }
