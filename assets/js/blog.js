@@ -26,7 +26,7 @@ function displayPosts(posts) {
             <h2 class="blog-card__title"><a href="singleBlog.html">${post.blog_title}</a></h2>
             <p class="blog-card__short-desc">${post.blog_short_desc}</P>
             <p class="blog-card__author">by <span>${post.author}</span></p>
-            <a class="blog-card__btn" href="singleBlog.html">Read More  <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="blog-card__btn " href="singleBlog.html">Read More  <i class="fa-solid fa-arrow-right"></i></a>
         `;
         blog.appendChild(div);
     }

@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+*:focus {
+  outline: none;
+}
 body {
   background-color: #e5e5e5;
   font-family: "Public Sans", sans-serif;
@@ -64,11 +66,10 @@ img {
   padding: 40px 0;
 }
 
-a.active{
-      color: #000;
-      background-color: #EDEDED;
-      i{
-          color: #0063F7 !important;
-        }
+a.active {
+  color: #000;
+  background-color: #ededed;
+  i {
+    color: #0063f7 !important;
+  }
 }
-                            

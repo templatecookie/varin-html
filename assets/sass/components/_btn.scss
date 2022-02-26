@@ -8,6 +8,8 @@
   padding: 10px 35px;
   display: inline-block;
   transition: 0.3s all ease-in;
+
+  width: 170px;
   &:hover {
     background-color: #004fc6;
   }
@@ -21,16 +23,21 @@
 .download__btn {
   position: relative;
 
-  img {
-    position: absolute;
-    left: 35px;
-    opacity: 0;
-    top: 6px;
-    transition: 0.3s all ease-in;
-  }
-  &:hover {
+  span {
     img {
-      left: 10px;
+      position: absolute;
+      top: 9px;
+      left: 42px;
+      opacity: 0;
+      transition: 0.3s all ease-in;
+    }
+  }
+
+  &:hover {
+    padding-left: 40px;
+    padding-right: 20px;
+    img {
+      left: 20px;
       opacity: 1;
     }
   }
@@ -44,15 +51,15 @@
   padding-left: 0;
   i {
     position: absolute;
-    top: 14px;
-    right: 35px;
+    top: 15px;
+    left: 25px;
     opacity: 0;
     transition: 0.3s all ease-in;
   }
   &:hover {
     background-color: transparent;
     i {
-      right: 17px;
+      left: 65px;
       opacity: 1;
     }
   }

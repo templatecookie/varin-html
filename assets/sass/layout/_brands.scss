@@ -13,6 +13,17 @@
     &-item {
       text-align: center;
       flex: 0 0 25%;
+      a {
+        img {
+          transition: 0.3s all ease-in;
+          filter: grayscale(100%);
+        }
+        &:hover {
+          img {
+            filter: grayscale(0);
+          }
+        }
+      }
       @include max(767px) {
         flex: 0 0 50%;
       }

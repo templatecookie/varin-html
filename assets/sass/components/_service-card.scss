@@ -1,10 +1,10 @@
 .service-card {
   padding: 15px;
   border: 1px solid #e2e2e2;
-
-  @include max(991px) {
-    height: auto;
-    margin-bottom: 20px;
+  transition: 0.3s all ease-in;
+  &:hover {
+    background: #ffffff;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.12);
   }
   &-icon {
     background-color: #fce7be;
@@ -42,6 +42,10 @@
       line-height: 24px;
       color: #707070;
       padding-bottom: 15px;
+      height: 100px;
+      white-space: wrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     @include max(767px) {
       margin-bottom: 20px;

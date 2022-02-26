@@ -40,14 +40,12 @@
       margin-bottom: 10px;
       &::placeholder {
         font-family: "Public Sans", sans-serif;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 20px;
         color: #8d8d8d;
       }
     }
-    input:focus {
-      border: 1px solid blue !important;
-    }
+
     &-btn {
       margin-top: 10px;
       .btn_primary {
@@ -63,6 +61,19 @@
       width: 100%;
     }
   }
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid blue !important;
 }
 #map {
   height: 100%;
