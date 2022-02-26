@@ -1075,8 +1075,8 @@ a.active i {
 .brands .brand-item {
   text-align: center;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
 }
 
 .brands .brand-item a img {
@@ -1084,6 +1084,7 @@ a.active i {
   transition: 0.3s all ease-in;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  width: 100%;
 }
 
 .brands .brand-item a:hover img {

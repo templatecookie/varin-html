@@ -12,11 +12,12 @@
     }
     &-item {
       text-align: center;
-      flex: 0 0 25%;
+      flex: 0 0 20%;
       a {
         img {
           transition: 0.3s all ease-in;
           filter: grayscale(100%);
+          width: 100%;
         }
         &:hover {
           img {
