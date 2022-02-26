@@ -64,7 +64,7 @@ function displayDuePosts(posts) {
             <h2 class="blog-card__title"><a href="singleBlog.html">${post.blog_title}</a></h2>
             <p class="blog-card__short-desc">${post.blog_short_desc}</P>
             <p class="blog-card__author">by <span>${post.author}</span></p>
-            <a class="blog-card__btn" href="singleBlog.html">Read More</a>
+            <a class="blog-card__btn btn_primary hire-btn" href="singleBlog.html">Read More</a>
         `;
         blog.appendChild(div);
     }

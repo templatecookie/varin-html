@@ -21,7 +21,7 @@ function displayPosts(posts) {
                 <p>${post.portfolio_category}</p>
             </div>
             <h2 class="portfolio-card__title"><a href="singlePortfolio.html">${post.portfolio_title}</a></h2>
-            <a class="portfolio-card__btn" href="singlePortfolio.html">View Project  <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="portfolio-card__btn btn_primary hire-btn" href="singlePortfolio.html">View Project  <i class="fa-solid fa-arrow-right"></i></a>
         `;
         portfolio.appendChild(div);
     }
@@ -54,7 +54,7 @@ function displayDuePosts(posts) {
                 <p>${post.portfolio_category}</p>
             </div>
             <h2 class="portfolio-card__title"><a href="singlePortfolio.html">${post.portfolio_title}</a></h2>
-            <a class="portfolio-card__btn" href="singlePortfolio.html">View Project  <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="portfolio-card__btn btn_primary hire-btn" href="singlePortfolio.html">View Project  <i class="fa-solid fa-arrow-right"></i></a>
         `;
         portfolio.appendChild(div);
     }
@@ -99,7 +99,7 @@ function displayTabPosts(posts) {
                 <p>${post.portfolio_category}</p>
             </div>
             <h2 class="portfolio-card__title"><a href="singlePortfolio.html">${post.portfolio_title}</a></h2>
-            <a class="portfolio-card__btn" href="singlePortfolio.html">View Project  <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="portfolio-card__btn btn_primary hire-btn" href="singlePortfolio.html">View Project  <i class="fa-solid fa-arrow-right"></i></a>
         `;
 
             portfolioTabImages.appendChild(div);
@@ -123,7 +123,7 @@ function displayTabPosts(posts) {
                 <p>${post.portfolio_category}</p>
             </div>
             <h2 class="portfolio-card__title"><a href="singlePortfolio.html">${post.portfolio_title}</a></h2>
-            <a class="portfolio-card__btn" href="singlePortfolio.html">View Project  <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="portfolio-card__btn btn_primary hire-btn" href="singlePortfolio.html">View Project  <i class="fa-solid fa-arrow-right"></i></a>
         `;
 
             portfolioTabPotrait.appendChild(div);
@@ -147,7 +147,7 @@ function displayTabPosts(posts) {
                 <p>${post.portfolio_category}</p>
             </div>
             <h2 class="portfolio-card__title"><a href="singlePortfolio.html">${post.portfolio_title}</a></h2>
-            <a class="portfolio-card__btn" href="singlePortfolio.html">View Project  <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="portfolio-card__btn btn_primary hire-btn" href="singlePortfolio.html">View Project  <i class="fa-solid fa-arrow-right"></i></a>
         `;
 
             portfolioTabWebDesign.appendChild(div);
@@ -171,7 +171,7 @@ function displayTabPosts(posts) {
                 <p>${post.portfolio_category}</p>
             </div>
             <h2 class="portfolio-card__title"><a href="singlePortfolio.html">${post.portfolio_title}</a></h2>
-            <a class="portfolio-card__btn" href="singlePortfolio.html">View Project  <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="portfolio-card__btn btn_primary hire-btn" href="singlePortfolio.html">View Project  <i class="fa-solid fa-arrow-right"></i></a>
         `;
             portfolioTabMobileApp.appendChild(div);
         }
