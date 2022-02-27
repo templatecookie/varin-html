@@ -354,7 +354,7 @@ a.active i {
 .hire-btn i {
   position: absolute;
   top: 15px;
-  left: 25px;
+  left: 56px;
   opacity: 0;
   -webkit-transition: 0.3s all ease-in;
   transition: 0.3s all ease-in;
@@ -488,7 +488,7 @@ a.active i {
 
 .blog-card__btn i {
   opacity: 0;
-  margin-left: -20px;
+  margin-left: -2px;
   -webkit-transition: 0.3s all ease-in;
   transition: 0.3s all ease-in;
 }
@@ -1566,6 +1566,8 @@ a.active i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 10px;
+  font-size: 14px;
 }
 
 @media (max-width: 1200px) {
@@ -1674,6 +1676,7 @@ a.active i {
   border: 1px solid #ededed;
   border-radius: 5px;
   margin-bottom: 10px;
+  font-family: "Public Sans", sans-serif;
 }
 
 .contact-form input::-webkit-input-placeholder,
