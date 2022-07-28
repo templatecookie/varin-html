@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Card</title>
+    <!-- cdn font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Main Wrapper   -->
+    <div class="main-wrapper">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-3 col-md-1 col-2">
+                    <!-- Sidebar Menu -->
+                    <header class="sidebar">
+                        <div class="sidebar-profile">
+                            <div class="sidebar-profile__image">
+                                <img src="assets/images/img/sidebar-person.png" alt="">
+                                
+                            </div>
+                            <h2 class="sidebar-profile__name">Stiphen Osais</h2>
+                            <p class="sidebar-profile__designation">UI/UX Designer</p>
+                            <div class="sidebar-profile__social-media">
+                                <ul>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <nav class="sidebar-menu">
+                            <ul>
+                                <li class="menu-item"><a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+                                <li class="menu-item"><a href="resume.html"><i class="fa-solid fa-id-card-clip"></i><span>Resume</span></a></li>
+                                <li class="menu-item"><a href="portfolio.html"><i class="fa-solid fa-briefcase"></i><span>Portfolio</span></a></li>
+                                <li class="menu-item"><a href="blog.html" class="active"><i class="fa-brands fa-blogger-b"></i><span>Blogs</span></a></li>
+                                <li class="menu-item"><a href="contact.html"><i class="fa-solid fa-table-list"></i><span>Contact</span></a></li>
+                            </ul>
+
+                        </nav>
+                        <div class="sidebar-contact">
+                            <p class="sidebar-contact__address">
+                                <i class="fa-solid fa-location-arrow"></i><span>Stockton, New Hampshire</span>
+                            </p>
+                            <p class="sidebar-conatct__phone">
+                                <i class="fa-solid fa-phone"></i><span>(219) 555-0114e</span>
+                            </p>
+                            <p class="sidebar-contact__email">
+                                <i class="fa-regular fa-envelope"></i><span>example.email@gmail.com</span>
+                            </p>
+                        </div>
+                    </header>
+                </div>
+                <div class="col-lg-9 col-md-11 col-10">
+                    <div class="main-bar">
+                        <!-- Blog Section -->
+                            <h2 class="page-title">Blogs</h2>
+                            <div id="blog">
+                                
+                            </div>
+                            <button id="load-more-btn">
+                                Load More    
+                            </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

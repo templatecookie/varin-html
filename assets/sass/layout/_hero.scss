@@ -1,0 +1,51 @@
+.hero {
+  &-content {
+    h1 {
+      font-weight: 700;
+      font-size: 70px;
+      @include max(992px) {
+        font-size: 55px;
+        line-height: 75px;
+      }
+      line-height: 88px;
+      letter-spacing: -0.02em;
+      color: #161616;
+      span {
+        display: block;
+      }
+    }
+    p {
+      font-size: 24px;
+      line-height: 36px;
+      color: #707070;
+      margin-bottom: 100px;
+      @include max(991px) {
+        margin-bottom: 45px;
+      }
+    }
+    &__btn {
+      a:last-child {
+        padding: 15px 35px;
+        background-color: transparent;
+        color: #0063f7;
+
+        @include max(991px) {
+          margin-top: 15px;
+        }
+      }
+      @include max(991px) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &-img {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

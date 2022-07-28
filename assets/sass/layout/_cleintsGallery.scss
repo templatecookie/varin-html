@@ -1,0 +1,8 @@
+.clients-gallery {
+  width: 100%;
+  height: 345px;
+  margin-top: -70px;
+  @include max(991px) {
+    margin-top: 20px;
+  }
+}

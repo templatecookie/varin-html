@@ -1,0 +1,23 @@
+.main-bar {
+  #blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    margin-bottom: 64px;
+    @include max(767px) {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+  }
+  #load-more-btn {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0063f7;
+    cursor: pointer;
+    display: block;
+    margin: 0px auto;
+    background-color: transparent;
+  }
+}

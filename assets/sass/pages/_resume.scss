@@ -1,0 +1,150 @@
+.education {
+  &-top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .experience-card {
+    display: flex;
+    padding: 8px;
+    border: 1px solid #e2e2e2;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    &__left {
+      margin-right: 8px;
+      img {
+        padding: 12px 8px;
+        background-color: #fff;
+      }
+    }
+    &__right {
+      h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+      h3 {
+        font-size: 14px;
+        margin-bottom: 16px;
+        color: #707070;
+      }
+      p {
+        font-size: 14px;
+        color: #707070;
+      }
+    }
+  }
+}
+
+.institution {
+  border-left: 1px solid #e2e2e2;
+  padding: 0 15px;
+  @include max(480px) {
+    margin-top: 20px;
+  }
+  &-info {
+    position: relative;
+    &::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #707070;
+      position: absolute;
+      left: -23px;
+      top: 3px;
+    }
+    margin-bottom: 20px;
+    h3 {
+      padding: 0 10px 10px 0;
+    }
+    p {
+      &.name {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #707070;
+      }
+      &.year {
+        font-size: 16px;
+        line-height: 24px;
+        color: #c6c6c6;
+        padding-bottom: 15px;
+      }
+      &.details {
+        font-size: 16px;
+        line-height: 24px;
+        color: #707070;
+      }
+    }
+  }
+}
+.skills {
+  padding: 50px 0;
+  &-title {
+    padding-bottom: 30px;
+  }
+  &-left {
+    border-left: 1px solid #e2e2e2;
+    padding-left: 15px;
+    &-info {
+      position: relative;
+      margin-bottom: 20px;
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 5px;
+        color: #707070;
+      }
+      .skill-container {
+        background-color: #ededed;
+        width: 80%;
+        height: 5px;
+      }
+
+      .skill {
+        background-color: #0063f7;
+        height: 5px;
+      }
+      .xd {
+        width: 90%;
+      }
+      .figma {
+        width: 80%;
+      }
+      .illustrator {
+        width: 95%;
+      }
+      .photoshop {
+        width: 85%;
+      }
+      .sketchup {
+        width: 97%;
+      }
+      .autocad {
+        width: 75%;
+      }
+      .lumion {
+        width: 65%;
+      }
+      .gis {
+        width: 79%;
+      }
+      .python {
+        width: 88%;
+      }
+      .c {
+        width: 87%;
+      }
+      &::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #707070;
+        position: absolute;
+        left: -23px;
+        top: 4px;
+      }
+    }
+  }
+}

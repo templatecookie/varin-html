@@ -1,0 +1,96 @@
+.main-bar {
+  .title-tab-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    @include max(767px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .tab {
+      @include max(767px) {
+        margin-bottom: 32px;
+      }
+      li {
+        display: inline-block;
+        padding: 0px 12px;
+        @include max(535px) {
+          display: block;
+          text-align: center;
+          padding: 8px 0;
+        }
+        a {
+          color: #707070;
+          cursor: pointer;
+          &:hover,
+          &:active {
+            border-bottom: 1px solid #161616;
+            color: #161616;
+          }
+        }
+      }
+    }
+  }
+  #portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    margin-bottom: 64px;
+    @include max(767px) {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+  }
+  #portfolioTabImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    // margin-bottom: 64px;
+    @include max(767px) {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+  }
+  #portfolioTabWebDesign {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    //  margin-bottom: 64px;
+    @include max(767px) {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+  }
+  #portfolioTabPotrait {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    // margin-bottom: 64px;
+    @include max(767px) {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+  }
+  #portfolioTabMobileApp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 45px;
+    // margin-bottom: 64px;
+    @include max(767px) {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+  }
+  #load-more-btn {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0063f7;
+    cursor: pointer;
+    display: block;
+    margin: 0px auto;
+    background-color: transparent;
+    margin-top: 40px;
+  }
+}

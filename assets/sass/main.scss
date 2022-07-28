@@ -1,0 +1,19 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "base/reset";
+
+
+//components
+@import "components/sidebar";
+@import "components/btn";
+@import "components/blog-card";
+@import "components/portfolio-card";
+
+//pages
+@import "pages/home";
+@import "pages/blog";
+@import "pages/singleBlog";
+@import "pages/portfolio";
+@import "pages/singlePortfolio";
+@import "pages/contact";
+@import "pages/resume";
