@@ -40,16 +40,19 @@
             }
         }
         &__name{
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 28px;
-            color: #161616;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 1.25;
         }
         &__designation{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
             margin-bottom: 14px;
             color: #707070;
         }
         &__social-media{
+            margin-bottom: 48px;
             @include max(991px){
                 display: none;
             }
@@ -82,7 +85,7 @@
         }
     }
     &-menu{
-        margin-bottom: 32px;
+        margin-bottom: 80px;
         ul{
             li{
                 margin-bottom: 10px;
@@ -91,17 +94,23 @@
                 }
                 &:hover, &:active, &:visited{
                         a{
-                            color: #000;
+                            span{
+                                color: #161616;
+                            }
                             background-color: #EDEDED;
                             i{
                                 color: #0063F7;
                             }
                         }
                     }
+                a.active span{
+                    color: #161616;
+                }
                 a{
                     padding: 6px 0px;
                     display: flex;
                     align-items: center;
+                    color: #707070;
                     @include max(991px){
                         justify-content: center;
                     }

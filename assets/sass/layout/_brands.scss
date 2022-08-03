@@ -1,6 +1,12 @@
 .brands {
   .section-title {
     text-align: center;
+    @include max(525px){
+        h2{
+            font-size: 18px;
+            padding-bottom: 0px;
+        }
+    }
   }
   padding-bottom: 20px;
   .brand {
@@ -18,6 +24,9 @@
           transition: 0.3s all ease-in;
           filter: grayscale(100%);
           width: 100%;
+          @include max(525px){
+            width: 40%;
+          }
         }
         &:hover {
           img {
@@ -27,10 +36,6 @@
       }
       @include max(767px) {
         flex: 0 0 50%;
-      }
-      @include max(425px) {
-        flex: 0 0 100%;
-        margin-bottom: 10px;
       }
     }
   }
