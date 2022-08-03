@@ -15,12 +15,14 @@
     }
     &-profile{
         margin: 16px;
+        position: relative;
         @include max(991px){
             margin: 2px;
         }
         &__image{
             width: 120px;
             height: 120px;
+            
             @include max(991px){
                 width: 32px;
                 height: 32px;
@@ -31,6 +33,20 @@
             margin: 0 auto 16px;
             img{
                 width: 100%;
+            }
+            .mode-changer{
+                background: #EDEDED;
+                padding: 10px 12px;
+                border-radius: 100%;
+                position: absolute;
+                right: 0;
+                top: -10px;
+                z-index: 1000;
+                border: none;
+                cursor: pointer;
+                #sun-svg{
+                    display: none;
+                }
             }
         }
         &__name, &__designation{
