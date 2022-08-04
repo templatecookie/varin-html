@@ -28,6 +28,9 @@
                 height: 32px;
                 margin-top: 20px;
                 margin-bottom: 80px;
+                img{
+                    margin-top: 40px;
+                }
             }
             border-radius: 50%;
             margin: 0 auto 16px;
@@ -36,13 +39,20 @@
             }
             .mode-changer{
                 background: #EDEDED;
-                padding: 10px 12px;
+                padding: 10px 11px;
                 border-radius: 100%;
                 position: absolute;
                 right: 0;
                 top: -10px;
                 z-index: 1000;
                 border: none;
+                @include max(991px){
+                    padding: 5px;
+                    #sun-svg, #moon-svg{
+                        width: 80%;
+                        margin: 0px auto;
+                    }
+                }
                 cursor: pointer;
                 #sun-svg{
                     display: none;
@@ -127,6 +137,7 @@
                     display: flex;
                     align-items: center;
                     color: #707070;
+                    border-radius: 5px;
                     @include max(991px){
                         justify-content: center;
                     }

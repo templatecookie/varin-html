@@ -91,6 +91,11 @@ body.dark-theme .mode-changer {
   padding: 8px;
   background: #434343;
 }
+@media (max-width: 991px) {
+  body.dark-theme .mode-changer {
+    padding: 3px;
+  }
+}
 
 body.dark-theme {
   background: #161616;
@@ -258,6 +263,43 @@ body.dark-theme .main-bar .title-tab-wrapper .tab li .active {
   border-bottom: 1px solid #EDEDED;
 }
 
+body.dark-theme .single-portfolio__meta-left h2 {
+  color: #F7F7F7;
+}
+body.dark-theme .single-portfolio__meta-left p {
+  color: #8D8D8D;
+}
+body.dark-theme .single-portfolio__meta-right-top p {
+  color: #8D8D8D;
+}
+body.dark-theme .single-portfolio__meta-right-top p:first-of-type {
+  background: #F7F7F7;
+  padding: 8px;
+  border-radius: 5px;
+}
+body.dark-theme .single-portfolio__meta-right-bottom h2 {
+  color: #F7F7F7;
+}
+body.dark-theme .single-portfolio__meta-right-bottom p {
+  color: #8D8D8D;
+}
+body.dark-theme .single-portfolio__role-title {
+  color: #F7F7F7;
+}
+body.dark-theme .single-portfolio__role-designation {
+  color: #8D8D8D;
+}
+body.dark-theme .single-portfolio__role-designation li::marker {
+  color: #8D8D8D;
+}
+body.dark-theme .single-portfolio__content-details {
+  color: #8D8D8D;
+}
+
+body.dark-theme .more-portfolios-title {
+  color: #F7F7F7;
+}
+
 body.dark-theme .single-blog__meta-left {
   background: #F7F7F7;
 }
@@ -346,13 +388,16 @@ body.dark-theme .contact-title p {
     margin-top: 20px;
     margin-bottom: 80px;
   }
+  .sidebar-profile__image img {
+    margin-top: 40px;
+  }
 }
 .sidebar-profile__image img {
   width: 100%;
 }
 .sidebar-profile__image .mode-changer {
   background: #EDEDED;
-  padding: 10px 12px;
+  padding: 10px 11px;
   border-radius: 100%;
   position: absolute;
   right: 0;
@@ -360,6 +405,15 @@ body.dark-theme .contact-title p {
   z-index: 1000;
   border: none;
   cursor: pointer;
+}
+@media (max-width: 991px) {
+  .sidebar-profile__image .mode-changer {
+    padding: 5px;
+  }
+  .sidebar-profile__image .mode-changer #sun-svg, .sidebar-profile__image .mode-changer #moon-svg {
+    width: 80%;
+    margin: 0px auto;
+  }
 }
 .sidebar-profile__image .mode-changer #sun-svg {
   display: none;
@@ -445,6 +499,7 @@ body.dark-theme .contact-title p {
   display: flex;
   align-items: center;
   color: #707070;
+  border-radius: 5px;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.001em;
@@ -641,7 +696,7 @@ body.dark-theme .contact-title p {
   font-size: 14px;
   line-height: 20px;
   color: #0063f7;
-  width: 100px;
+  min-width: 100px;
 }
 .blog-card__btn i {
   opacity: 0;

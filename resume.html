@@ -263,6 +263,16 @@
         }else{
             document.body.classList.remove("dark-theme");
         }
+        // document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+                document.getElementById('moon-svg').style.display = "none"
+                document.getElementById('sun-svg').style.display = "block"
+                document.getElementById('mode-changer').style.background = "#434343"
+            }else{
+                document.getElementById('sun-svg').style.display = "none"
+                document.getElementById('moon-svg').style.display = "block"
+                document.getElementById('mode-changer').style.background = "#EDEDED"
+            }
     </script>
 </body>
 </html>

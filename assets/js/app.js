@@ -45,32 +45,3 @@ function initMap() {
   });
 }
 
-
-//======================= xxxxxxxxxxxxxxx =========================
-var toggleIcon = document.getElementById('mode-changer');
-
-toggleIcon.onclick= () =>{
-    console.log("clicked");
-    let local_storage_mode = localStorage.getItem('mode')
-    console.log(local_storage_mode)
-    if(local_storage_mode === 'dark'){
-        localStorage.setItem('mode', 'light');
-        document.body.classList.toggle("dark-theme");
-    }else{
-        localStorage.setItem('mode', 'dark');
-        document.body.classList.toggle("dark-theme");
-        console.log('else')
-    }
-    
-    // document.body.classList.toggle("dark-theme");
-    if (document.body.classList.contains("dark-theme")) {
-        document.getElementById('moon-svg').style.display = "none"
-        document.getElementById('sun-svg').style.display = "block"
-        document.getElementById('mode-changer').style.background = "#434343"
-    }else{
-        document.getElementById('sun-svg').style.display = "none"
-        document.getElementById('moon-svg').style.display = "block"
-        document.getElementById('mode-changer').style.background = "#EDEDED"
-    }
-};
-

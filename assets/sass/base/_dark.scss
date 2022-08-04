@@ -1,6 +1,9 @@
 body.dark-theme .mode-changer{
     padding: 8px;
     background: #434343;
+    @include max(991px){
+        padding: 3px;
+    }
 }
 
 body.dark-theme{
@@ -214,6 +217,58 @@ body.dark-theme .main-bar .title-tab-wrapper .tab li a{
 body.dark-theme .main-bar .title-tab-wrapper .tab li .active{
     color: #EDEDED;
     border-bottom: 1px solid #EDEDED;
+}
+
+// Single Portfolio Page
+body.dark-theme .single-portfolio{
+    &__meta-left{
+        h2{
+            color: #F7F7F7;
+        }
+        p{
+            color: #8D8D8D;
+        }
+    }
+    &__meta-right{
+        &-top{
+            p{
+                &:first-of-type{
+                    background: #F7F7F7;
+                    padding: 8px;
+                    border-radius: 5px;
+                }
+                color: #8D8D8D;
+            }
+        }
+        &-bottom{
+            h2{
+                color: #F7F7F7;
+            }
+            p{
+                color: #8D8D8D;
+            }
+        }
+    }
+    &__role{
+        &-title{
+            color: #F7F7F7;
+        }
+        &-designation{
+            color: #8D8D8D;
+            li{
+                &::marker{
+                    color: #8D8D8D;
+                }
+            }
+        }
+    }
+    &__content-details{
+        color: #8D8D8D;
+    }
+}
+
+body.dark-theme .more-portfolios-title{
+    color: #F7F7F7;
 }
 
 // Single Blog Page
