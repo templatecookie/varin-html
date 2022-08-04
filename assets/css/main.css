@@ -650,6 +650,12 @@ body.dark-theme .contact-title p {
   margin-bottom: 16px;
   color: #707070;
 }
+@media (max-width: 480px) {
+  .blog-card__meta {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .blog-card__meta p {
   font-size: 14px;
   line-height: 24px;
@@ -925,6 +931,7 @@ body.dark-theme .contact-title p {
 @media (max-width: 768px) {
   .service-history {
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-around;
   }
 }
@@ -1233,6 +1240,7 @@ body.dark-theme .contact-title p {
 @media (max-width: 525px) {
   .single-blog__meta {
     flex-direction: column;
+    gap: 10px;
   }
 }
 .single-blog__meta-left {
@@ -1328,6 +1336,16 @@ body.dark-theme .contact-title p {
   display: inline-block;
   text-align: center;
   padding: 16px 12px;
+}
+@media (max-width: 767px) {
+  .single-blog .share-item ul li {
+    padding: 10px 6px;
+  }
+}
+@media (max-width: 480px) {
+  .single-blog .share-item ul li {
+    padding: 8px 3px;
+  }
 }
 .single-blog .share-item ul li:first-child {
   padding-left: 0px;
@@ -1691,6 +1709,12 @@ textarea:focus {
 .education-top {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .education-top {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 .education .experience-card {
   display: flex;

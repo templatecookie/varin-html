@@ -38,6 +38,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
+    @include max(480px){
+        flex-direction: column;
+        gap: 10px;
+    }
     color: #707070;
     p {
       font-size: 14px;

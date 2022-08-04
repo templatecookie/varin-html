@@ -15,6 +15,7 @@
         margin-bottom: 48px;
         @include max(525px){
             flex-direction: column;
+            gap: 10px;
         }
         &-left{  
             padding: 8px 16px;
@@ -110,6 +111,12 @@
                 display: inline-block;
                 text-align: center;
                 padding: 16px 12px;
+                @include max(767px){
+                    padding: 10px 6px;
+                }
+                @include max(480px){
+                    padding: 8px 3px;
+                }
                 &:first-child{
                     padding-left: 0px;
                 }
