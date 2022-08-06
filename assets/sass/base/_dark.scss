@@ -1,0 +1,334 @@
+body.dark-theme .mode-changer{
+    padding: 8px;
+    background: #434343;
+    @include max(991px){
+        padding: 3px;
+    }
+}
+
+body.dark-theme{
+    background: #161616;
+}
+
+body.dark-theme .sidebar{
+    background: #2D2D2D;
+    &-profile__name{
+        color: #F7F7F7
+    }
+    &-profile__designation{
+        color: #8D8D8D;
+    }
+    &-menu{
+        ul {
+            li{
+                a{
+                    span{
+                        color: #8D8D8D;
+                    }
+                }
+            }
+        }
+    }
+}
+body.dark-theme .section-title {
+    h2{
+        color: #F7F7F7;
+    }
+}
+body.dark-theme .main-bar{
+    background: #2D2D2D;
+    .hero-content {
+        h1{
+            color: #F7F7F7;
+        }
+        p{
+            color: #A9A9A9;
+        }
+        &__btn{
+            a:last-child{
+                color: #F7F7F7;
+            }
+        } 
+    }
+    .about{
+        .section-title {
+            h2{
+                color: #F7F7F7;
+            }
+        }
+        &-content{
+            color: #A9A9A9;
+        }
+    }
+}
+body.dark-theme .service-card{
+    &-content{
+        h3{
+            color: #F7F7F7;
+        }
+        p{
+            color: #8D8D8D;
+        }
+    }
+    &:hover{
+        h3{
+            color: #161616;
+        }
+        .hire-btn{
+            color: #0063f7;
+        }
+    }
+} 
+body.dark-theme .card{
+    &-top{
+        h4, h3{
+            color: #F7F7F7;
+        }
+        p{
+            color: #8D8D8D;
+        }
+    }
+    &:hover{
+        h4, h3{
+            color: #161616;
+        }
+    }
+}
+body.dark-theme .testimonial {
+    .qoute-img {
+        path{
+            fill: #F7F7F7;
+        }
+    }
+    &__qoute-text{
+        color: #A9A9A9;
+    }
+    &__client-info{
+        .client__info-name{
+            color: #F7F7F7;
+        }
+        .client__info-designation{
+            color: #A9A9A9;
+        }
+    }
+}
+
+body.dark-theme .hire-btn{
+    color: #F7F7F7;
+}
+
+body.dark-theme .section-title{
+    color: #F7F7F7;
+}
+
+body.dark-theme .experience-card {
+    h2{
+        color: #F7F7F7;
+    }
+    h3{
+        color: #8D8D8D;
+    }
+    p{
+        color: #8D8D8D;
+    }
+}
+body.dark-theme .institution-info {
+    h3{
+        color: #F7F7F7;
+    }
+    p{
+        color: #8D8D8D;
+    }
+}
+body.dark-theme .page-title{
+    color: #F7F7F7;
+}
+body.dark-theme .portfolio-card__title{
+    a{
+        color: #F7F7F7;
+    }
+}
+body.dark-theme .portfolio-card__meta{
+    background: #F7F7F7;
+}
+
+// Blog Page
+body.dark-theme .blog-card{
+    &__meta-left{
+        background: #F7F7F7;
+    }
+    &__meta-right{
+        color: #8D8D8D;
+    }
+    &__title {
+        a{
+            color: #F7F7F7;
+        }
+    }
+    &__short-desc{
+        color: #8D8D8D;
+    }
+    &__auhtor{
+        color: #8D8D8D;
+    }
+    &__btn{
+        color: #F7F7F7;
+    }
+    &:hover{
+        .blog-card__title {
+            a{
+                color: #161616;
+            }
+        }
+        .blog-card__btn{
+            color: #0063f7;
+        }
+    }
+}
+
+body.dark-theme #load-more-btn{
+    color: #F7F7F7;
+}
+
+// Portfolio Page 
+body.dark-theme .portfolio-card{
+    &__btn{
+        color: #F7F7F7;
+    }
+    &:hover{
+        .portfolio-card__title{
+            a{
+                color:#161616;
+            }
+        }
+        .portfolio-card__btn{
+            color:#0063f7;
+        }
+    }
+}
+body.dark-theme .main-bar .title-tab-wrapper .tab li a{
+    color: #8D8D8D;
+    border-bottom: 1px solid transparent;
+    &:hover{
+        color: #EDEDED;
+        border-bottom: 1px solid #EDEDED;
+    }
+}
+body.dark-theme .main-bar .title-tab-wrapper .tab li .active{
+    color: #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+}
+
+// Single Portfolio Page
+body.dark-theme .single-portfolio{
+    &__meta-left{
+        h2{
+            color: #F7F7F7;
+        }
+        p{
+            color: #8D8D8D;
+        }
+    }
+    &__meta-right{
+        &-top{
+            p{
+                &:first-of-type{
+                    background: #F7F7F7;
+                    padding: 8px;
+                    border-radius: 5px;
+                }
+                color: #8D8D8D;
+            }
+        }
+        &-bottom{
+            h2{
+                color: #F7F7F7;
+            }
+            p{
+                color: #8D8D8D;
+            }
+        }
+    }
+    &__role{
+        &-title{
+            color: #F7F7F7;
+        }
+        &-designation{
+            color: #8D8D8D;
+            li{
+                &::marker{
+                    color: #8D8D8D;
+                }
+            }
+        }
+    }
+    &__content-details{
+        color: #8D8D8D;
+    }
+}
+
+body.dark-theme .more-portfolios-title{
+    color: #F7F7F7;
+}
+
+// Single Blog Page
+body.dark-theme .single-blog{
+    &__meta-left{
+        background: #F7F7F7;
+    }
+    &__meta-right {
+        p{
+            color: #8D8D8D;
+        }
+    }
+    &__title{
+        color: #F7F7F7;
+    }
+    &-author{
+        color: #F7F7F7;
+    }
+    &__content-left{
+        p{
+            color: #A9A9A9;
+        }
+    }
+    &__content-details{
+        p{
+            color: #A9A9A9;
+        }
+    }
+    &__content-qoute{
+        svg{
+            path{
+                fill: #F7F7F7;
+            }
+        }
+        p{
+            color: #A9A9A9;
+        }
+    }
+    &__content-last{
+        color: #A9A9A9;
+    }
+}
+body.dark-theme .share-item{
+    p{
+        color: #8D8D8D;
+    }
+}
+body.dark-theme .more-blogs-title{
+    color: #F7F7F7;
+}
+
+// Contact Page 
+body.dark-theme .contact{
+    background: #2D2D2D;
+    &-title{
+        h2{
+            color: #F7F7F7;
+        }
+        p{
+            color: #8D8D8D;
+        }
+    }
+}

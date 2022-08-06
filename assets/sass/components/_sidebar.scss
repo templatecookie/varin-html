@@ -15,22 +15,48 @@
     }
     &-profile{
         margin: 16px;
+        position: relative;
         @include max(991px){
             margin: 2px;
         }
         &__image{
             width: 120px;
             height: 120px;
+            
             @include max(991px){
                 width: 32px;
                 height: 32px;
                 margin-top: 20px;
                 margin-bottom: 80px;
+                img{
+                    margin-top: 40px;
+                }
             }
             border-radius: 50%;
             margin: 0 auto 16px;
             img{
                 width: 100%;
+            }
+            .mode-changer{
+                background: #EDEDED;
+                padding: 10px 11px;
+                border-radius: 100%;
+                position: absolute;
+                right: 0;
+                top: -10px;
+                z-index: 1000;
+                border: none;
+                @include max(991px){
+                    padding: 5px;
+                    #sun-svg, #moon-svg{
+                        width: 80%;
+                        margin: 0px auto;
+                    }
+                }
+                cursor: pointer;
+                #sun-svg{
+                    display: none;
+                }
             }
         }
         &__name, &__designation{
@@ -40,16 +66,19 @@
             }
         }
         &__name{
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 28px;
-            color: #161616;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 1.25;
         }
         &__designation{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
             margin-bottom: 14px;
             color: #707070;
         }
         &__social-media{
+            margin-bottom: 48px;
             @include max(991px){
                 display: none;
             }
@@ -82,7 +111,7 @@
         }
     }
     &-menu{
-        margin-bottom: 32px;
+        margin-bottom: 80px;
         ul{
             li{
                 margin-bottom: 10px;
@@ -91,17 +120,24 @@
                 }
                 &:hover, &:active, &:visited{
                         a{
-                            color: #000;
+                            span{
+                                color: #161616;
+                            }
                             background-color: #EDEDED;
                             i{
                                 color: #0063F7;
                             }
                         }
                     }
+                a.active span{
+                    color: #161616;
+                }
                 a{
                     padding: 6px 0px;
                     display: flex;
                     align-items: center;
+                    color: #707070;
+                    border-radius: 5px;
                     @include max(991px){
                         justify-content: center;
                     }

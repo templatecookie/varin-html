@@ -2,6 +2,10 @@
   &-top {
     display: flex;
     justify-content: space-between;
+    @include max(767px){
+        flex-direction: column;
+        gap: 20px;
+    }
   }
   .experience-card {
     display: flex;

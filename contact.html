@@ -21,7 +21,23 @@
                         <div class="sidebar-profile">
                             <div class="sidebar-profile__image">
                                 <img src="assets/images/img/sidebar-person.png" alt="">
-                                
+                                <button id="mode-changer-contact" class="mode-changer">
+                                    <svg id="moon-svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.6179 12.071C13.7745 12.3738 14.974 12.4512 16.1519 12.3038C15.7564 13.1576 15.2095 13.9368 14.5344 14.6022C13.5545 15.568 12.3386 16.2603 11.0079 16.61C9.67716 16.9596 8.27805 16.9546 6.9499 16.5953C5.62174 16.2359 4.41091 15.5349 3.438 14.562C2.4651 13.5891 1.76407 12.3783 1.40475 11.0501C1.04543 9.72196 1.04036 8.32284 1.39004 6.99212C1.73973 5.66139 2.43196 4.44551 3.39779 3.46558C4.06316 2.79049 4.84238 2.24362 5.69619 1.84807C5.54883 3.02598 5.62624 4.22554 5.92898 5.38214C6.34993 6.99039 7.19137 8.45761 8.36688 9.63312C9.54239 10.8086 11.0096 11.6501 12.6179 12.071Z" stroke="#707070" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>  
+                                        <svg id="sun-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 17.625C15.1066 17.625 17.625 15.1066 17.625 12C17.625 8.8934 15.1066 6.375 12 6.375C8.8934 6.375 6.375 8.8934 6.375 12C6.375 15.1066 8.8934 17.625 12 17.625Z" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 3.375V1.5" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.89689 5.89707L4.57501 4.5752" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3.375 12H1.5" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.89689 18.103L4.57501 19.4249" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 20.625V22.5" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18.1031 18.103L19.425 19.4249" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M20.625 12H22.5" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18.1031 5.89707L19.425 4.5752" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                                                                  
+                                </button>
                             </div>
                             <h2 class="sidebar-profile__name">Stiphen Osais</h2>
                             <p class="sidebar-profile__designation">UI/UX Designer</p>
@@ -63,16 +79,14 @@
                         <section class="contact">
                         <div class="row">
                             <div class="contact-title">
-                                <h2>About me</h2>
+                                <h2>Contact</h2>
                                 <p>Please the fill the form and you team will reach you in 24 hours</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 col-lg-6">
                                 <div class="contact-map">
-                                    <iframe style="border:0; width: 100%; height: 100%;"
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.8468073104864!2d90.94164306453462!3d24.212144284363738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3756a1a00094be1d%3A0x51bd51184cfa4ef0!2sCharbari!5e0!3m2!1sen!2sbd!4v1601646415818!5m2!1sen!2sbd"
-                                        frameborder="0" allowfullscreen></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d142543.57284638577!2d90.34928576871451!3d23.780777744581084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e1!3m2!1sen!2sbd!4v1659539281902!5m2!1sen!2sbd" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     <!-- <div id="map"></div> -->
                                     <!-- <img src="assets/images/img/map.png" alt="contact"> -->
                                 </div>
@@ -101,5 +115,50 @@
     </div>
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly" async></script> -->
     <script src="assets/js/app.js"></script>
+    <script>
+        var toggleIconContact = document.getElementById('mode-changer-contact');
+
+        toggleIconContact.onclick= () =>{
+            console.log("clicked");
+            let local_storage_mode = localStorage.getItem('mode')
+            console.log(local_storage_mode)
+            if(local_storage_mode === 'dark'){
+                localStorage.setItem('mode', 'light');
+                document.body.classList.toggle("dark-theme");
+            }else{
+                localStorage.setItem('mode', 'dark');
+                document.body.classList.toggle("dark-theme");
+                console.log('else')
+            }
+            
+            // document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                document.getElementById('moon-svg').style.display = "none"
+                document.getElementById('sun-svg').style.display = "block"
+                document.getElementById('mode-changer').style.background = "#434343"
+            }else{
+                document.getElementById('sun-svg').style.display = "none"
+                document.getElementById('moon-svg').style.display = "block"
+                document.getElementById('mode-changer').style.background = "#EDEDED"
+            }
+        };
+        let local_storage_mode = localStorage.getItem('mode')
+        if(local_storage_mode === 'dark'){
+            document.body.classList.add("dark-theme");
+            console.log('Hi Dark Theme')
+        }else{
+            document.body.classList.remove("dark-theme");
+        }
+        // document.body.classList.toggle("dark-theme");
+        if (document.body.classList.contains("dark-theme")) {
+                document.getElementById('moon-svg').style.display = "none"
+                document.getElementById('sun-svg').style.display = "block"
+                document.getElementById('mode-changer').style.background = "#434343"
+            }else{
+                document.getElementById('sun-svg').style.display = "none"
+                document.getElementById('moon-svg').style.display = "block"
+                document.getElementById('mode-changer').style.background = "#EDEDED"
+            }
+    </script>
 </body>
 </html>

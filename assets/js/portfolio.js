@@ -82,15 +82,11 @@ function displayTabPosts(posts) {
     const portfolioTabMobileApp = document.getElementById("portfolioTabMobileApp");
     for (const post of posts) {
         if (post.portfolio_category === 'Images') {
-            document.getElementById("portfolioTabImages").style.display =
-                "grid";
-            document.getElementById("portfolioTabPotrait").style.display =
-                "none";
+            document.getElementById("portfolioTabImages").style.display = "grid";
+            document.getElementById("portfolioTabPotrait").style.display = "none";
             document.getElementById("portfolioTabMobileApp").style.display = 'none';
-            document.getElementById("portfolioTabWebDesign").style.display =
-                "none";
+            document.getElementById("portfolioTabWebDesign").style.display = "none";
             const div = document.createElement("div");
-            div.classList.add("portfolio-card");
             div.innerHTML = `
             <div class="portfolio-card__feature-image">
                 <a href="singlePortfolio.html"><img src=${post.portfolio_feature_img} /></a>
@@ -178,4 +174,16 @@ function displayTabPosts(posts) {
         
     }
 
+}
+
+
+// Add active class to the current button (highlight it)
+var portTab = document.getElementById("portfolio-tab");
+var items = portTab.getElementsByClassName("tab-item");
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace("active", "");
+  this.className += " active";
+  });
 }

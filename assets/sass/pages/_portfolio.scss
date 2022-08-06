@@ -22,12 +22,17 @@
         a {
           color: #707070;
           cursor: pointer;
-          &:hover,
-          &:active {
+          padding-bottom: 4px;
+          &:hover {
             border-bottom: 1px solid #161616;
             color: #161616;
           }
         }
+        .active{
+            background-color: transparent;
+            border-bottom: 1px solid #161616;
+            color: #161616;
+          }
       }
     }
   }
