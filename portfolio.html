@@ -105,6 +105,7 @@
 
     <script src="./assets/js/portfolio.js"></script>
     <script src="./assets/js/app.js"></script>
+    <!-- mode switcher javascript code -->
     <script>
         var toggleIconPortfolio = document.getElementById('mode-changer-portfolio');
 
@@ -120,8 +121,6 @@
                 document.body.classList.toggle("dark-theme");
                 console.log('else')
             }
-            
-            // document.body.classList.toggle("dark-theme");
             if (document.body.classList.contains("dark-theme")) {
                 document.getElementById('moon-svg').style.display = "none"
                 document.getElementById('sun-svg').style.display = "block"
@@ -138,7 +137,6 @@
         }else{
             document.body.classList.remove("dark-theme");
         }
-        // document.body.classList.toggle("dark-theme");
         if (document.body.classList.contains("dark-theme")) {
                 document.getElementById('moon-svg').style.display = "none"
                 document.getElementById('sun-svg').style.display = "block"
