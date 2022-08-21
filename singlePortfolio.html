@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>V-Card</title>
+    <title>V-Card | Single Portfolio</title>
     <!-- cdn font-awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
@@ -21,7 +21,23 @@
                         <div class="sidebar-profile">
                             <div class="sidebar-profile__image">
                                 <img src="assets/images/img/sidebar-person.png" alt="">
-                                
+                                <button id="mode-changer-singlePortfolio" class="mode-changer">
+                                    <svg id="moon-svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.6179 12.071C13.7745 12.3738 14.974 12.4512 16.1519 12.3038C15.7564 13.1576 15.2095 13.9368 14.5344 14.6022C13.5545 15.568 12.3386 16.2603 11.0079 16.61C9.67716 16.9596 8.27805 16.9546 6.9499 16.5953C5.62174 16.2359 4.41091 15.5349 3.438 14.562C2.4651 13.5891 1.76407 12.3783 1.40475 11.0501C1.04543 9.72196 1.04036 8.32284 1.39004 6.99212C1.73973 5.66139 2.43196 4.44551 3.39779 3.46558C4.06316 2.79049 4.84238 2.24362 5.69619 1.84807C5.54883 3.02598 5.62624 4.22554 5.92898 5.38214C6.34993 6.99039 7.19137 8.45761 8.36688 9.63312C9.54239 10.8086 11.0096 11.6501 12.6179 12.071Z" stroke="#707070" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>  
+                                        <svg id="sun-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 17.625C15.1066 17.625 17.625 15.1066 17.625 12C17.625 8.8934 15.1066 6.375 12 6.375C8.8934 6.375 6.375 8.8934 6.375 12C6.375 15.1066 8.8934 17.625 12 17.625Z" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 3.375V1.5" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.89689 5.89707L4.57501 4.5752" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3.375 12H1.5" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.89689 18.103L4.57501 19.4249" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12 20.625V22.5" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18.1031 18.103L19.425 19.4249" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M20.625 12H22.5" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18.1031 5.89707L19.425 4.5752" stroke="#F7F7F7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                                                                  
+                                </button>
                             </div>
                             <h2 class="sidebar-profile__name">Stiphen Osais</h2>
                             <p class="sidebar-profile__designation">UI/UX Designer</p>
@@ -60,7 +76,7 @@
                 </div>
                 <div class="col-lg-9 col-md-11 col-10">
                     <div class="main-bar">
-                        <!-- Blog Section -->
+                        <!-- Single Portfolio Section -->
                     <h2 class="page-title">Portfolio</h2>
                     <div class="single-portfolio">
                         <div class="single-portfolio__feature-image">
@@ -110,7 +126,7 @@
                     </div>
                     <h2 class="more-portfolios-title">See Other Projects</h2>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 mb-4 mb-md-0">
                             <div class="portfolio-card">
                                 <div class="portfolio-card__feature-image">
                                     <a href="singleBlog.html"><img src="assets/images/img/portfolio-3.png" /></a>
@@ -143,5 +159,48 @@
     </div>
 
     <script src="assets/js/portfolio.js"></script>
+    <!-- mode switcher javascript code -->
+    <script>
+        var toggleIcon = document.getElementById('mode-changer-singlePortfolio');
+
+        toggleIcon.onclick= () =>{
+            console.log("clicked");
+            let local_storage_mode = localStorage.getItem('mode')
+            console.log(local_storage_mode)
+            if(local_storage_mode === 'dark'){
+                localStorage.setItem('mode', 'light');
+                document.body.classList.toggle("dark-theme");
+            }else{
+                localStorage.setItem('mode', 'dark');
+                document.body.classList.toggle("dark-theme");
+                console.log('else')
+            }
+            if (document.body.classList.contains("dark-theme")) {
+                document.getElementById('moon-svg').style.display = "none"
+                document.getElementById('sun-svg').style.display = "block"
+                document.getElementById('mode-changer').style.background = "#434343"
+            }else{
+                document.getElementById('sun-svg').style.display = "none"
+                document.getElementById('moon-svg').style.display = "block"
+                document.getElementById('mode-changer').style.background = "#EDEDED"
+            }
+        };
+        let local_storage_mode = localStorage.getItem('mode')
+        if(local_storage_mode === 'dark'){
+            document.body.classList.add("dark-theme");
+            console.log('Hi Dark Theme')
+        }else{
+            document.body.classList.remove("dark-theme");
+        }
+        if (document.body.classList.contains("dark-theme")) {
+                document.getElementById('moon-svg').style.display = "none"
+                document.getElementById('sun-svg').style.display = "block"
+                document.getElementById('mode-changer').style.background = "#434343"
+            }else{
+                document.getElementById('sun-svg').style.display = "none"
+                document.getElementById('moon-svg').style.display = "block"
+                document.getElementById('mode-changer').style.background = "#EDEDED"
+            }
+    </script>
 </body>
 </html>

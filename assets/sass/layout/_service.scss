@@ -5,6 +5,7 @@
   justify-content: space-between;
   @include max(768px) {
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-around;
   }
   &-card {

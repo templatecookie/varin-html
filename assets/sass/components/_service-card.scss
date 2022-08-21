@@ -1,7 +1,10 @@
 .service-card {
-  padding: 15px;
+  padding: 32px;
   border: 1px solid #e2e2e2;
   transition: 0.3s all ease-in;
+  @include max(525px){
+    padding: 15px;
+    }
   &:hover {
     background: #ffffff;
     box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.12);
@@ -19,13 +22,15 @@
       transform: translate(-50%, -50%);
     }
     &--graphic {
-      border: 1px solid #e2e2e2;
+      border-radius: 5px;
     }
     &--arch {
       background-color: #ffcdcd;
+      border-radius: 5px;
     }
     &--ux {
       background-color: #daf3ff;
+      border-radius: 5px;
     }
   }
   &-content {

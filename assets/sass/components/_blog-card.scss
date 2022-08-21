@@ -38,6 +38,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
+    @include max(480px){
+        flex-direction: column;
+        gap: 10px;
+    }
     color: #707070;
     p {
       font-size: 14px;
@@ -49,6 +53,7 @@
     }
     &-left {
       padding: 8px 16px;
+      border-radius: 5px;
     }
     &-right {
       text-align: right;
@@ -85,7 +90,7 @@
     font-size: 14px;
     line-height: 20px;
     color: #0063f7;
-    width: 100px;
+    min-width: 100px;
     i {
       opacity: 0;
       margin-left: -2px;
