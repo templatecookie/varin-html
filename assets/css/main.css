@@ -137,6 +137,10 @@ body.dark-theme .main-bar .about-content {
   color: #A9A9A9;
 }
 
+body.dark-theme .service-history-card p {
+  color: #F7F7F7;
+}
+
 body.dark-theme .service-card-content h3 {
   color: #F7F7F7;
 }
@@ -688,7 +692,7 @@ body.dark-theme .contact-title p {
   color: #707070;
   margin-bottom: 16px;
   height: 100px;
-  white-space: wrap;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -912,7 +916,7 @@ body.dark-theme .contact-title p {
   color: #707070;
   padding-bottom: 15px;
   height: 100px;
-  white-space: wrap;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -1009,7 +1013,7 @@ body.dark-theme .contact-title p {
   text-align: center;
   color: #707070;
   height: 75px;
-  white-space: wrap;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }

@@ -61,6 +61,13 @@ body.dark-theme .main-bar{
         }
     }
 }
+body.dark-theme .service-history{
+    &-card{
+        p{
+            color: #F7F7F7;
+        }
+    }
+}
 body.dark-theme .service-card{
     &-content{
         h3{
