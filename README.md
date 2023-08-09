@@ -3,7 +3,7 @@ Templatecookie.com creates quality templates and php scripts. Templatecookie has
 
 # [Varin - personal portfolio HTML template](https://www.templatecookie.com/products)
 
-> Varin - personal portfolio v-card HTML template with dark mode availabilty.
+> Varin - personal portfolio v-card HTML template with dark mode availability.
 
 Check the [Live Demo here](https://varin-vcard-html.netlify.app/).
 
@@ -11,28 +11,15 @@ Check the [Live Demo here](https://varin-vcard-html.netlify.app/).
 
 ## Pages List
 - Home (Landing Page)
-- Browse Listing
-- Listing Detail
-- Seller Dashboard
-- User Dashboard
-- About
-- Contact
-- Pricing Plan
-- Blog List
+- Projects
+- Project Details
+- Blog
 - Blog Details
-- Privacy Policy
-- Terms & Conditions
-- Coming Soon
-- 404
-- 500
 - and many more
 
 
 ## Framework & Technologies
-- tailwind
-- scss
-- vue3
-- swiper
+- without any framework and third-party plugins
 
 ## Credits
 - Design & Developed by [Templatecookie](https://templatecookie.com)
