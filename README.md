@@ -1,19 +1,42 @@
-# [templatecookie.com](https://templatecookie.com)
-FREE UI & HTML Templates for Designer and Developer. Lomeyo Labs is a place where a team of design & developers create beautiful templates. Visit [templatecookie.com](https://templatecookie.com) for more updates.
+# [Templatecookie](https://templatecookie.com)
+Templatecookie.com creates quality templates and php scripts. Templatecookie has many free HTML & Figma templates available for professional use. Templatecookie is famous for its premium PHP Scripts available on [Codeanyon Marketplace](https://codecanyon.net/user/templatecookie). Browse [Templatecookie](https://templatecookie.com) today and discover awesome digital products.
 
-# [Varin HTML Template](https://varin-vcard-html.netlify.app/)
+# [Adriver - Classified Adlisting HTML Template](https://www.templatecookie.com/products)
 
-> Varin html template based on without any framework, we use only raw html, css and javascript
+> Adriver - classified adlisting HTML template with 8+ landing pages for different professions.
 
-This project is a html version [Varin HTML Template](https://varin-vcard-html.netlify.app/) designed with HTML & CSS.
+Check the [Live Demo here](https://adriver-vue-project.netlify.app/).
 
-Check the [Live Demo here](https://varin-vcard-html.netlify.app/).
+![](screenshot.jpeg)
 
-![](screenshot.png)
+## Pages List
+- Home (Landing Page)
+- Browse Listing
+- Listing Detail
+- Seller Dashboard
+- User Dashboard
+- About
+- Contact
+- Pricing Plan
+- Blog List
+- Blog Details
+- Privacy Policy
+- Terms & Conditions
+- Coming Soon
+- 404
+- 500
+- and many more
+
+
+## Framework & Technologies
+- tailwind
+- scss
+- vue3
+- swiper
 
 ## Credits
-- Design by [Zafor Iqbal](https://www.linkedin.com/in/zafor-iqbal-9b6945216/)
-- Coded by [Rakibul Islam](https://github.com/Rakib0101)
+- Design & Developed by [Templatecookie](https://templatecookie.com)
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+
